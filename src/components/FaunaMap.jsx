@@ -11,31 +11,42 @@ import {
 } from "react-leaflet";
 import L from "leaflet";
 
-// Status IUCN Colors Mapping
+// Status IUCN Colors Mapping (Semantic Conservation Palette)
 const IUCN_COLORS = {
-  CR: "#dc2626", // Crimson
-  EN: "#ea580c", // Orange
-  VU: "#f59e0b", // Amber
-  LC: "#10b981"  // Emerald
+  CR: "#dc2626", // Red-600
+  EN: "#ea580c", // Orange-600
+  VU: "#f59e0b", // Amber-500
+  LC: "#10b981"  // Emerald-500
 };
 
-// Emoji avatar untuk siluet fauna di dalam Leaflet Marker
+// Emoji avatar untuk marker satwa di Leaflet
 const SPECIES_ICONS = {
-  "komodo": "🦎",
-  "badak-jawa": "🦏",
   "harimau-sumatera": "🐅",
+  "gajah-sumatera": "🐘",
+  "orangutan-sumatera": "🦧",
+  "badak-jawa": "🦏",
+  "elang-jawa": "🦅",
   "orangutan-kalimantan": "🦧",
+  "bekantan": "🐵",
+  "macan-dahan-kalimantan": "🐆",
   "jalak-bali": "🪶",
-  "burung-cendrawasih": "🦜",
+  "komodo": "🦎",
   "anoa": "🐂",
   "babirusa": "🐗",
   "tarsius": "🐒",
-  "bekantan": "🐵",
-  "penyu-belimbing": "🐢"
+  "maleo": "🥚",
+  "kuskus-beruang-talaud": "🐻",
+  "bidadari-halmahera": "🪽",
+  "burung-cendrawasih": "🦜",
+  "kasuari-gelambir-ganda": "🦃",
+  "kanguru-pohon-mantel-emas": "🦘",
+  "penyu-belimbing": "🐢",
+  "mambruk-victoria": "🕊️"
 };
 
 /**
  * Controller untuk auto pan & zoom ketika fauna aktif berubah
+ * Menggunakan durasi animasi 1.2s sesuai spesifikasi
  */
 function MapCameraController({ activeFauna }) {
   const map = useMap();
@@ -44,8 +55,8 @@ function MapCameraController({ activeFauna }) {
     if (!activeFauna || !activeFauna.coordinates) return;
 
     map.flyTo(activeFauna.coordinates, 8, {
-      duration: 1.4,
-      easeLinearity: 0.25
+      animate: true,
+      duration: 1.2
     });
   }, [activeFauna, map]);
 
@@ -53,7 +64,7 @@ function MapCameraController({ activeFauna }) {
 }
 
 /**
- * Komponen Utama Peta Fauna Indonesia
+ * Komponen Utama Peta Geospasial Satwa Endemik Indonesia
  */
 export default function FaunaMap({
   faunaList = [],
@@ -65,15 +76,19 @@ export default function FaunaMap({
   biogeographicLines = {},
   gbifPoints = []
 }) {
-  const [mapReady, setMapReady] = useState(false);
+  const [isMounted, setIsMounted] = useState(false);
 
-  // Boundary koordinat kepulauan Indonesia
+  useEffect(() => {
+    setIsMounted(true);
+  }, []);
+
+  // Batas spasial kepulauan Indonesia
   const indonesiaBounds = [
-    [-11.5, 94.0], // Barat Daya
-    [6.5, 142.0]   // Timur Laut
+    [-11.5, 94.0], // Barat Daya (Samudra Hindia)
+    [6.5, 142.0]   // Timur Laut (Papua & Samudra Pasifik)
   ];
 
-  // Helper untuk membuat Leaflet DivIcon kustom berdesain modern
+  // Generator Leaflet DivIcon kustom dengan touch target >= 44x44px
   const createCustomMarkerIcon = (fauna, isActive) => {
     const color = IUCN_COLORS[fauna.iucnStatus] || "#10b981";
     const emoji = SPECIES_ICONS[fauna.id] || "🐾";
@@ -84,34 +99,35 @@ export default function FaunaMap({
       iconAnchor: [22, 42],
       popupAnchor: [0, -40],
       html: `
-        <div style="position: relative; display: flex; align-items: center; justify-content: center;">
-          ${isActive ? `<div class="fauna-pulse-ring" style="border: 2px solid ${color}; background-color: ${color}20;"></div>` : ""}
-          <div class="fauna-marker-pin" style="background: radial-gradient(circle at 30% 30%, ${color}, #0f172a); border-color: ${isActive ? '#ffffff' : color};">
+        <div style="position: relative; display: flex; align-items: center; justify-content: center; width: 44px; height: 44px;">
+          ${isActive ? `<div class="fauna-pulse-ring" style="border: 2px solid ${color}; background-color: ${color}25;"></div>` : ""}
+          <div class="fauna-marker-pin" style="background: radial-gradient(circle at 30% 30%, ${color}, #09131d); border-color: ${isActive ? '#ffffff' : color};">
             <div class="fauna-marker-inner">
               <span style="display:inline-block; filter: drop-shadow(0 1px 2px rgba(0,0,0,0.8)); font-size: 16px;">${emoji}</span>
             </div>
           </div>
-          <!-- Micro-badge status IUCN -->
           <span style="
             position: absolute;
-            top: -6px;
-            right: -6px;
+            top: -4px;
+            right: -4px;
             background-color: ${color};
             color: #ffffff;
             font-size: 9px;
             font-weight: 800;
-            padding: 2px 5px;
+            padding: 1px 5px;
             border-radius: 9999px;
-            border: 1px solid rgba(255, 255, 255, 0.8);
-            box-shadow: 0 2px 4px rgba(0,0,0,0.4);
+            border: 1px solid rgba(255, 255, 255, 0.9);
+            box-shadow: 0 2px 4px rgba(0,0,0,0.5);
           ">${fauna.iucnStatus}</span>
         </div>
       `
     });
   };
 
+  if (!isMounted) return null;
+
   return (
-    <div className="relative w-full h-full">
+    <div className="relative w-full h-full min-h-screen">
       <MapContainer
         center={[-2.5, 118.0]}
         zoom={5}
@@ -121,17 +137,16 @@ export default function FaunaMap({
         maxBoundsViscosity={0.85}
         scrollWheelZoom={true}
         className="w-full h-full"
-        whenReady={() => setMapReady(true)}
       >
-        {/* OpenStreetMap CartoDB Dark Matter / Satellite Tiles */}
+        {/* CartoDB Voyager Tile: Kontras tinggi, bersih, dan menonjolkan daratan kepulauan */}
         <TileLayer
-          attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>'
+          attribution='&copy; <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener noreferrer">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions" target="_blank" rel="noopener noreferrer">CARTO</a>'
           url="https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png"
           subdomains="abcd"
           maxZoom={19}
         />
 
-        {/* Dynamic Camera Animation */}
+        {/* Dynamic Pan & Zoom Camera Animation (1.2s) */}
         <MapCameraController activeFauna={activeFauna} />
 
         {/* 1. Garis Biogeografis Wallace & Weber */}
@@ -141,16 +156,16 @@ export default function FaunaMap({
               <Polyline
                 positions={biogeographicLines.wallaceLine.coordinates}
                 pathOptions={{
-                  color: biogeographicLines.wallaceLine.color,
+                  color: biogeographicLines.wallaceLine.color || "#f59e0b",
                   weight: 3,
-                  opacity: 0.85,
+                  opacity: 0.9,
                   dashArray: "8, 10"
                 }}
               >
-                <Tooltip sticky direction="top" className="bg-slate-900/90 text-amber-300 font-semibold px-2 py-1 rounded border border-amber-500/30">
-                  <div className="text-xs">
-                    <span className="font-bold text-amber-400">Garis Wallace (Pemisah Zona Sunda & Wallacea)</span>
-                    <p className="text-[10px] text-slate-300">Batas zoogeografi Alfred Russel Wallace (1859)</p>
+                <Tooltip sticky direction="top">
+                  <div className="text-xs bg-slate-900 text-amber-300 p-2 rounded-lg border border-amber-500/40 shadow-lg">
+                    <p className="font-bold text-amber-400">Garis Wallace</p>
+                    <p className="text-[10px] text-slate-300">Pemisah Zona Asiatis (Sunda) dan Wallacea</p>
                   </div>
                 </Tooltip>
               </Polyline>
@@ -160,16 +175,16 @@ export default function FaunaMap({
               <Polyline
                 positions={biogeographicLines.weberLine.coordinates}
                 pathOptions={{
-                  color: biogeographicLines.weberLine.color,
+                  color: biogeographicLines.weberLine.color || "#0ea5e9",
                   weight: 3,
-                  opacity: 0.85,
+                  opacity: 0.9,
                   dashArray: "8, 10"
                 }}
               >
-                <Tooltip sticky direction="top" className="bg-slate-900/90 text-sky-300 font-semibold px-2 py-1 rounded border border-sky-500/30">
-                  <div className="text-xs">
-                    <span className="font-bold text-sky-400">Garis Weber (Pemisah Wallacea & Australis)</span>
-                    <p className="text-[10px] text-slate-300">Batas kesetimbangan faunistik Max Wilhelm Carl Weber</p>
+                <Tooltip sticky direction="top">
+                  <div className="text-xs bg-slate-900 text-sky-300 p-2 rounded-lg border border-sky-500/40 shadow-lg">
+                    <p className="font-bold text-sky-400">Garis Weber</p>
+                    <p className="text-[10px] text-slate-300">Batas Faunal Balance Wallacea dan Zona Australis (Sahul)</p>
                   </div>
                 </Tooltip>
               </Polyline>
@@ -177,7 +192,7 @@ export default function FaunaMap({
           </>
         )}
 
-        {/* 2. Rute Migrasi / Persebaran Spasial Polylines */}
+        {/* 2. Rute Spasial Koridor Jelajah */}
         {showMigration && faunaList.map((fauna) => {
           if (!fauna.migrationWaypoints || fauna.migrationWaypoints.length < 2) return null;
           const isCurrentActive = activeFauna?.id === fauna.id;
@@ -196,40 +211,40 @@ export default function FaunaMap({
               }}
             >
               <Tooltip sticky direction="center">
-                <div className="text-xs bg-slate-900 text-white p-1 rounded shadow">
-                  <p className="font-bold text-emerald-400">Koridor Jelajah {fauna.name}</p>
-                  <p className="text-[10px] text-slate-300">{fauna.island} ({fauna.locationName})</p>
+                <div className="text-xs bg-slate-900 text-white p-2 rounded-lg shadow-xl border border-slate-700">
+                  <p className="font-bold text-emerald-400">Koridor Jelajah: {fauna.name}</p>
+                  <p className="text-[10px] text-slate-300">{fauna.region || fauna.island} &bull; {fauna.locationName}</p>
                 </div>
               </Tooltip>
             </Polyline>
           );
         })}
 
-        {/* 3. Titik Observasi Empiris GBIF untuk Fauna Aktif */}
+        {/* 3. Titik Observasi Lapangan GBIF */}
         {activeFauna && gbifPoints && gbifPoints.length > 0 && gbifPoints.map((point, idx) => (
           <Marker
             key={`gbif-point-${idx}`}
             position={[point.lat, point.lng]}
             icon={L.divIcon({
               className: "gbif-ping-marker",
-              iconSize: [12, 12],
-              iconAnchor: [6, 6],
+              iconSize: [14, 14],
+              iconAnchor: [7, 7],
               html: `
                 <div style="
-                  width: 10px;
-                  height: 10px;
-                  background-color: #38bdf8;
-                  border: 1.5px solid #ffffff;
+                  width: 12px;
+                  height: 12px;
+                  background-color: #0ea5e9;
+                  border: 2px solid #ffffff;
                   border-radius: 50%;
-                  box-shadow: 0 0 8px #0284c7;
+                  box-shadow: 0 0 10px #0284c7;
                 "></div>
               `
             })}
           >
             <Tooltip direction="top">
-              <div className="text-[11px] bg-slate-900 text-sky-200 p-1.5 rounded border border-sky-500/30">
-                <p className="font-semibold">Observasi GBIF ({point.year || "Spasial"})</p>
-                <p className="text-[10px] text-slate-300">{point.locality}</p>
+              <div className="text-xs bg-slate-900 text-sky-200 p-2 rounded-lg border border-sky-500/40 shadow-xl">
+                <p className="font-semibold text-sky-300">Rekam Spesimen GBIF ({point.year || "Spasial"})</p>
+                <p className="text-[10px] text-slate-300 mt-0.5">{point.locality}</p>
                 <p className="text-[9px] text-slate-400 italic">Basis: {point.basisOfRecord}</p>
               </div>
             </Tooltip>
@@ -249,17 +264,17 @@ export default function FaunaMap({
               }}
             >
               <Tooltip direction="top" offset={[0, -36]} opacity={0.95}>
-                <div className="bg-slate-900/95 text-white p-2 rounded-lg shadow-xl border border-emerald-500/30 min-w-[140px]">
+                <div className="bg-slate-900 text-white p-2.5 rounded-xl shadow-2xl border border-emerald-500/40 min-w-36">
                   <div className="flex items-center gap-1.5 mb-1">
-                    <span className="text-sm">{SPECIES_ICONS[fauna.id] || "🐾"}</span>
-                    <p className="font-bold text-sm text-emerald-300">{fauna.name}</p>
+                    <span className="text-base">{SPECIES_ICONS[fauna.id] || "🐾"}</span>
+                    <p className="font-bold text-xs text-emerald-300">{fauna.name}</p>
                   </div>
-                  <p className="text-[10px] italic text-slate-400">{fauna.scientificName}</p>
-                  <div className="mt-1 flex items-center justify-between text-[10px]">
-                    <span className="text-slate-300">{fauna.island}</span>
+                  <p className="text-[10px] italic text-slate-400 font-serif">{fauna.scientificName}</p>
+                  <div className="mt-1.5 flex items-center justify-between text-[10px] pt-1 border-t border-slate-800">
+                    <span className="text-slate-300 font-medium">{fauna.region || fauna.island}</span>
                     <span
                       className="px-1.5 py-0.5 rounded font-bold text-[9px]"
-                      style={{ backgroundColor: `${IUCN_COLORS[fauna.iucnStatus]}30`, color: IUCN_COLORS[fauna.iucnStatus] }}
+                      style={{ backgroundColor: `${IUCN_COLORS[fauna.iucnStatus]}25`, color: IUCN_COLORS[fauna.iucnStatus] }}
                     >
                       {fauna.iucnStatus}
                     </span>
@@ -271,11 +286,25 @@ export default function FaunaMap({
         })}
       </MapContainer>
 
-      {/* Mini Watermark HUD Peta */}
-      <div className="absolute bottom-3 left-4 z-[400] pointer-events-none hidden sm:flex items-center gap-2 bg-slate-950/70 backdrop-blur-md px-3 py-1.5 rounded-full border border-emerald-500/20 text-xs text-slate-300">
-        <span className="w-2 h-2 rounded-full bg-emerald-400 animate-ping"></span>
-        <span>Pusantara Geoportal &bull; Proyeksi Spasial WGS84</span>
-      </div>
+      {/* Legenda Biogeografi Nusantara (Ketika Layer Aktif) */}
+      {showBiogeography && (
+        <div className="hidden md:flex absolute bottom-4 left-4 z-30 flex-col gap-1.5 p-3 rounded-2xl bg-slate-900/90 backdrop-blur-md border border-slate-800 text-xs text-slate-200 shadow-xl max-w-xs pointer-events-auto">
+          <div className="font-bold text-emerald-400 text-[11px] uppercase tracking-wider mb-0.5">
+            Legenda Biogeografi
+          </div>
+          <div className="flex items-center gap-2">
+            <span className="w-5 h-0.5 border-t-2 border-dashed border-amber-400 shrink-0"></span>
+            <span><strong className="text-amber-300">Garis Wallace:</strong> Batas Zona Asiatis & Peralihan</span>
+          </div>
+          <div className="flex items-center gap-2">
+            <span className="w-5 h-0.5 border-t-2 border-dashed border-sky-400 shrink-0"></span>
+            <span><strong className="text-sky-300">Garis Weber:</strong> Batas Peralihan & Australis</span>
+          </div>
+          <div className="mt-1 text-[10px] text-slate-400 leading-normal border-t border-slate-800 pt-1">
+            <strong>3 Zona:</strong> Asiatis (Sunda), Wallacea (Sulawesi/Nusa Tenggara/Maluku), Australis (Sahul/Papua).
+          </div>
+        </div>
+      )}
     </div>
   );
 }

@@ -11,50 +11,59 @@
   --color-iucn-lc: #10b981;
 }
 
-/* Custom Leaflet Resets & Overrides */
-.leaflet-container {
+/* Base layout & Leaflet canvas */
+html,
+body {
   width: 100%;
   height: 100%;
-  background-color: #0b1320 !important;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  background-color: #020617;
+  color: #f8fafc;
+}
+
+.leaflet-container {
+  width: 100% !important;
+  height: 100% !important;
+  min-height: 100% !important;
+  background-color: #09131d !important;
   font-family: inherit;
   z-index: 1;
 }
 
-/* Custom Tile Darken Filter for Clean Ecological Dark Map */
-.dark-ecological-tiles {
-  filter: brightness(0.65) invert(1) contrast(3) hue-rotate(200deg) saturate(0.3) brightness(0.7);
-}
-
-/* Custom Marker Pulse & Styling */
+/* Custom Marker Styling */
 .fauna-custom-marker {
   display: flex;
   align-items: center;
   justify-content: center;
   position: relative;
   cursor: pointer;
-  transition: transform 0.25s cubic-bezier(0.34, 1.56, 0.64, 1);
+  transition: transform 0.2s cubic-bezier(0.34, 1.56, 0.64, 1);
+  min-width: 44px;
+  min-height: 44px;
 }
 
 .fauna-custom-marker:hover {
-  transform: scale(1.18) translateY(-4px);
+  transform: scale(1.15) translateY(-4px);
   z-index: 999 !important;
 }
 
 .fauna-custom-marker.active {
-  transform: scale(1.25) translateY(-6px);
+  transform: scale(1.22) translateY(-6px);
   z-index: 1000 !important;
 }
 
 .fauna-marker-pin {
-  width: 44px;
-  height: 44px;
+  width: 42px;
+  height: 42px;
   border-radius: 50% 50% 50% 0;
   transform: rotate(-45deg);
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.6), 0 0 15px rgba(16, 185, 129, 0.4);
-  border: 2px solid rgba(255, 255, 255, 0.9);
+  box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.6), 0 0 12px rgba(16, 185, 129, 0.35);
+  border: 2px solid rgba(255, 255, 255, 0.95);
   position: relative;
 }
 
@@ -70,8 +79,8 @@
 
 .fauna-pulse-ring {
   position: absolute;
-  width: 58px;
-  height: 58px;
+  width: 56px;
+  height: 56px;
   border-radius: 50%;
   pointer-events: none;
   animation: fauna-sonar-pulse 2s cubic-bezier(0.24, 0, 0.38, 1) infinite;
@@ -83,11 +92,11 @@
     opacity: 0.9;
   }
   70% {
-    transform: scale(1.7);
+    transform: scale(1.6);
     opacity: 0;
   }
   100% {
-    transform: scale(1.8);
+    transform: scale(1.7);
     opacity: 0;
   }
 }
@@ -107,22 +116,7 @@
   }
 }
 
-/* Biogeographic line styling */
-.wallace-line-style {
-  stroke-dasharray: 6, 8;
-  animation: wallace-drift 4s linear infinite;
-}
-
-@keyframes wallace-drift {
-  from {
-    stroke-dashoffset: 28;
-  }
-  to {
-    stroke-dashoffset: 0;
-  }
-}
-
-/* Custom Scrollbar for Glassmorphism drawer */
+/* Custom Scrollbar for Drawer & Menus */
 ::-webkit-scrollbar {
   width: 6px;
   height: 6px;
@@ -139,4 +133,13 @@
 
 ::-webkit-scrollbar-thumb:hover {
   background: rgba(16, 185, 129, 0.65);
+}
+
+/* Hide scrollbar utility */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }

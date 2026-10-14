@@ -2,7 +2,8 @@
   "biogeographicLines": {
     "wallaceLine": {
       "name": "Garis Wallace",
-      "description": "Batas biogeografis memisahkan zona Asiatis (Paparan Sunda) dengan wilayah peralihan Wallacea.",
+      "zone": "Pemisah Asiatis & Wallacea",
+      "description": "Batas zoogeografi yang ditarik oleh Alfred Russel Wallace (1859), memisahkan fauna Paparan Sunda (Asiatis) dari fauna zona peralihan Wallacea.",
       "coordinates": [
         [-8.8, 115.7],
         [-8.4, 115.8],
@@ -16,7 +17,8 @@
     },
     "weberLine": {
       "name": "Garis Weber",
-      "description": "Batas kesetimbangan faunistik memisahkan zona Wallacea dengan fauna Australis (Paparan Sahul).",
+      "zone": "Pemisah Wallacea & Australis",
+      "description": "Batas kesetimbangan faunistik yang dirumuskan oleh Max Wilhelm Carl Weber, memisahkan dominasi fauna peralihan dengan fauna Paparan Sahul (Australis).",
       "coordinates": [
         [-9.5, 128.5],
         [-7.5, 130.0],
@@ -26,117 +28,31 @@
         [3.0, 129.0],
         [6.0, 128.5]
       ],
-      "color": "#38bdf8"
+      "color": "#0ea5e9"
     }
   },
   "species": [
     {
-      "id": "komodo",
-      "name": "Komodo",
-      "scientificName": "Varanus komodoensis",
-      "englishName": "Komodo Dragon",
-      "iucnStatus": "CR",
-      "iucnCategory": "Kritis (Critically Endangered)",
-      "island": "Nusa Tenggara",
-      "locationName": "Taman Nasional Komodo (Pulau Komodo & Rinca, NTT)",
-      "coordinates": [-8.56, 119.49],
-      "populationEstimate": "± 3.100 - 3.400 ekor",
-      "populationTrend": "Menurun",
-      "threats": [
-        "Penyusutan habitat akibat kenaikan permukaan air laut",
-        "Penurunan ketersediaan mangsa utama (rusa timor)",
-        "Dampak aktivitas pariwisata yang tidak terkendali",
-        "Perubahan iklim global dan anomali cuaca"
-      ],
-      "taxonomy": {
-        "kingdom": "Animalia",
-        "phylum": "Chordata",
-        "class": "Reptilia",
-        "order": "Squamata",
-        "family": "Varanidae",
-        "genus": "Varanus",
-        "species": "Varanus komodoensis"
-      },
-      "biogeography": "Komodo merupakan peninggalan fauna purba garis Wallacea kepulauan Sunda Kecil. Isolasi ribuan tahun di pulau-pulau Nusa Tenggara tanpa predator mamalia besar memungkinkan reptil ini berevolusi menjadi karnivora puncak (Apex Predator) melalui mekanisme gigantisme pulau (island gigantism).",
-      "distributionDescription": "Terbatas di kawasan Pulau Komodo, Rinca, Gili Motang, Nusa Kode, dan sebagian pesisir barat Pulau Flores.",
-      "migrationWaypoints": [
-        [-8.55, 119.45],
-        [-8.58, 119.50],
-        [-8.68, 119.65],
-        [-8.72, 119.72],
-        [-8.60, 119.85]
-      ],
-      "funFacts": [
-        "Kadal terbesar di dunia yang masih hidup, dengan panjang mencapai 3 meter dan bobot melampaui 70 kg.",
-        "Menggunakan organ Jacobson di langit-langit mulut untuk mencium bau mangsa hingga jarak 9,5 km.",
-        "Memiliki kelenjar racun di rahang bawah yang mengeluarkan protein antikoagulan pencegah pembekuan darah mangsa."
-      ],
-      "imageUrl": "https://images.unsplash.com/photo-1549480017-d76466a4b7e8?auto=format&fit=crop&w=900&q=80",
-      "conservationAction": "Perlindungan zona inti di bawah Balai Taman Nasional Komodo, patroli SMART patrol anti perburuan rusa liar, serta pembatasan kuota daya dukung wisatawan (carrying capacity).",
-      "wikiTitle": "Komodo"
-    },
-    {
-      "id": "badak-jawa",
-      "name": "Badak Jawa",
-      "scientificName": "Rhinoceros sondaicus",
-      "englishName": "Javan Rhinoceros",
-      "iucnStatus": "CR",
-      "iucnCategory": "Kritis (Critically Endangered)",
-      "island": "Jawa",
-      "locationName": "Taman Nasional Ujung Kulon, Banten",
-      "coordinates": [-6.75, 105.35],
-      "populationEstimate": "± 76 - 80 individu",
-      "populationTrend": "Kritis / Rentan Stagnan",
-      "threats": [
-        "Penyempitan habitat dan dominasi gulma langkap (Arenga obtusifolia)",
-        "Kerentanan bencana alam (ancaman tsunami letusan Gunung Anak Krakatau)",
-        "Keragaman genetik yang sangat rendah (inbreeding depression)",
-        "Risiko wabah penyakit dari ternak liar di sekitar cagar alam"
-      ],
-      "taxonomy": {
-        "kingdom": "Animalia",
-        "phylum": "Chordata",
-        "class": "Mammalia",
-        "order": "Perissodactyla",
-        "family": "Rhinocerotidae",
-        "genus": "Rhinoceros",
-        "species": "Rhinoceros sondaicus"
-      },
-      "biogeography": "Termasuk fauna inti Paparan Sunda (Sundaic Realm). Sebelum glasiasi Pleistosen berakhir, badak Jawa menjelajahi koridor hutan hujan Asia Tenggara hingga Semenanjung Malaya dan Pulau Jawa sebelum isolasi geografis membatasi populasi terakhirnya di semenanjung Ujung Kulon.",
-      "distributionDescription": "Hanya tersisa di Semenanjung Ujung Kulon, ujung paling barat Pulau Jawa.",
-      "migrationWaypoints": [
-        [-6.72, 105.28],
-        [-6.75, 105.33],
-        [-6.78, 105.38],
-        [-6.82, 105.42],
-        [-6.76, 105.47]
-      ],
-      "funFacts": [
-        "Hanya memiliki satu cula (monoceros) berukuran 20-25 cm, tidak seperti badak Afrika yang bercula ganda.",
-        "Merupakan mamalia besar darat paling langka dan pemalu di muka bumi yang mengandalkan mandi kubangan lumpur untuk menjaga suhu tubuh.",
-        "Bibir atasnya berbentuk kait fleksibel (prehensile) untuk merenggut pucuk daun dan ranting muda."
-      ],
-      "imageUrl": "https://images.unsplash.com/photo-1575550959106-5a7defe28b56?auto=format&fit=crop&w=900&q=80",
-      "conservationAction": "Pembangunan Javan Rhino Study and Conservation Area (JRSCA), pembasmian pohon langkap invasif, pemantauan 24 jam dengan 100+ kamera jebak (camera traps), dan penjagaan Rhino Protection Unit (RPU).",
-      "wikiTitle": "Badak_jawa"
-    },
-    {
       "id": "harimau-sumatera",
       "name": "Harimau Sumatera",
+      "localName": "Harimau Sumatera",
       "scientificName": "Panthera tigris sumatrae",
       "englishName": "Sumatran Tiger",
       "iucnStatus": "CR",
       "iucnCategory": "Kritis (Critically Endangered)",
       "island": "Sumatera",
-      "locationName": "TN Gunung Leuser & TN Kerinci Seblat",
+      "region": "Sumatera",
+      "biogeographicZone": "Asiatis",
+      "locationName": "Taman Nasional Gunung Leuser & Kerinci Seblat",
       "coordinates": [-2.15, 101.55],
-      "populationEstimate": "± 400 - 500 individu liar",
+      "populationEstimate": "± 400 - 500 individu",
       "populationTrend": "Menurun",
+      "summary": "Subspesies harimau terakhir di Indonesia pasca kepunahan Harimau Bali dan Harimau Jawa. Memiliki tubuh paling ramping dan loreng paling rapat di antara seluruh subspesies harimau.",
       "threats": [
         "Deforestasi masif dan konversi hutan menjadi perkebunan kelapa sawit",
         "Perburuan liar untuk perdagangan organ tubuh satwa ilegal",
-        "Konflik horizontal dengan pemukiman warga sekitar batas konsesi hutan",
-        "Fragmentasi koridor jelajah ekologis oleh pembangunan jaringan jalan"
+        "Konflik horizontal dengan pemukiman di sekitar kawasan konsesi",
+        "Fragmentasi koridor jelajah oleh pembukaan jaringan jalan"
       ],
       "taxonomy": {
         "kingdom": "Animalia",
@@ -147,8 +63,8 @@
         "genus": "Panthera",
         "species": "Panthera tigris sumatrae"
       },
-      "biogeography": "Subspesies harimau terakhir yang tersisa di nusantara pasca kepunahan Harimau Bali (1937) dan Harimau Jawa (1980-an). Terisolasi di Pulau Sumatera semenjak terputusnya jembatan darat Sunda saat mencairnya es zaman Pleistosen akhir.",
-      "distributionDescription": "Tersebar secara sporadis di blok hutan pegunungan Bukit Barisan dari Aceh, Riau, Jambi, hingga Lampung.",
+      "biogeography": "Fauna inti Paparan Sunda (Sunda Shelf) yang terisolasi di Pulau Sumatera semenjak naiknya permukaan air laut pada akhir zaman es Pleistosen.",
+      "distributionDescription": "Hutan hujan pegunungan Bukit Barisan dari bentang alam Leuser di Aceh hingga Taman Nasional Bukit Barisan Selatan di Lampung.",
       "migrationWaypoints": [
         [3.50, 97.45],
         [1.20, 99.80],
@@ -157,31 +73,288 @@
         [-4.80, 103.90]
       ],
       "funFacts": [
-        "Subspesies harimau bertubuh paling ramping dan loreng paling rapat gelap untuk berkamuflase di kanopi lebat hutan tropis.",
-        "Memiliki selaput di sela-sela jari kaki yang menjadikannya perenang ulung saat memburu mangsa di sungai.",
-        "Auman Harimau Sumatera dapat terdengar hingga radius 3 kilometer di dalam hutan belantara."
+        "Memiliki selaput renang di sela jari kaki yang menjadikannya perenang ulung saat menyeberangi sungai hutan.",
+        "Aumannya mampu terdengar hingga radius 3 kilometer di dalam kerapatan hutan hujan tropis.",
+        "Pola loreng harimau bersifat unik pada tiap individu, serupa dengan sidik jari manusia."
       ],
       "imageUrl": "https://images.unsplash.com/photo-1561731216-c3a4d99437d5?auto=format&fit=crop&w=900&q=80",
-      "conservationAction": "Penyelamatan harimau korban jerat, translokasi konflik manusia-harimau, pembangunan koridor satwa Bukit Tigapuluh, dan penegakan hukum anti perburuan oleh Gakkum KLHK.",
-      "wikiTitle": "Harimau_sumatera"
+      "conservationAction": "Pembangunan koridor satwa Bukit Tigapuluh, patroli SMART patrol anti-jerat oleh BKSDA, dan penegakan hukum tindak pidana satwa oleh Gakkum KLHK.",
+      "wikiTitle": "Harimau_sumatera",
+      "mediaReferences": [
+        {
+          "title": "Kamera Jebak Rekam Kelahiran Anak Harimau Sumatera di TN Kerinci Seblat",
+          "publisher": "Mongabay Indonesia",
+          "date": "2024",
+          "url": "https://www.mongabay.co.id",
+          "excerpt": "Rekaman kamera jebak membuktikan keberhasilan perlindungan habitat inti koridor jelajah harimau di kawasan Bukit Barisan."
+        },
+        {
+          "title": "Strategi Pemulihan Populasi dan Koridor Satwa Sumatera",
+          "publisher": "Ditjen KSDAE Kementerian LHK",
+          "date": "2023",
+          "url": "https://ksdae.menlhk.go.id",
+          "excerpt": "Rencana aksi konservasi menitikberatkan pada mitigasi konflik manusia-satwa serta penanganan jerat pemburu."
+        }
+      ],
+      "externalLinks": [
+        { "label": "IUCN Red List Profile", "url": "https://www.iucnredlist.org" },
+        { "label": "Katalog Spesies GBIF", "url": "https://www.gbif.org/species/5219426" }
+      ]
+    },
+    {
+      "id": "gajah-sumatera",
+      "name": "Gajah Sumatera",
+      "localName": "Gajah Sumatera",
+      "scientificName": "Elephas maximus sumatranus",
+      "englishName": "Sumatran Elephant",
+      "iucnStatus": "CR",
+      "iucnCategory": "Kritis (Critically Endangered)",
+      "island": "Sumatera",
+      "region": "Sumatera",
+      "biogeographicZone": "Asiatis",
+      "locationName": "Taman Nasional Way Kambas & TN Tesso Nilo",
+      "coordinates": [-4.92, 105.78],
+      "populationEstimate": "± 1.400 - 1.700 individu",
+      "populationTrend": "Menurun",
+      "summary": "Subspesies gajah asia yang bertubuh lebih kecil dan memiliki warna kulit lebih terang dibandingkan gajah asia daratan.",
+      "threats": [
+        "Kehilangan habitat hutan dataran rendah akibat perkebunan",
+        "Perburuan gading liar dan peracunan akibat konflik lahan",
+        "Kematian akibat jerat babi dan kawat bertegangan listrik"
+      ],
+      "taxonomy": {
+        "kingdom": "Animalia",
+        "phylum": "Chordata",
+        "class": "Mammalia",
+        "order": "Proboscidea",
+        "family": "Elephantidae",
+        "genus": "Elephas",
+        "species": "Elephas maximus sumatranus"
+      },
+      "biogeography": "Penyebaran terbatas di Pulau Sumatera sebagai salah satu mamalia megaherbivora terakhir Paparan Sunda.",
+      "distributionDescription": "Kantung-kantung populasi terfragmentasi di Riau, Aceh, Jambi, Sumatera Selatan, dan Lampung.",
+      "migrationWaypoints": [
+        [4.20, 96.80],
+        [0.30, 101.60],
+        [-1.60, 103.20],
+        [-4.92, 105.78]
+      ],
+      "funFacts": [
+        "Membutuhkan pakan hingga 150 kg hijauan rumput dan ranting segar setiap harinya.",
+        "Merupakan insinyur ekosistem yang membuka jalan bagi mamalia kecil dan menyebarkan biji pohon hutan berukuran besar."
+      ],
+      "imageUrl": "https://images.unsplash.com/photo-1557050543-4d5f4e07ef46?auto=format&fit=crop&w=900&q=80",
+      "conservationAction": "Unit Patroli Gajah (Elephant Response Unit) di Way Kambas untuk mengarahkan kawanan gajah keluar dari pemukiman warga.",
+      "wikiTitle": "Gajah_sumatera",
+      "mediaReferences": [
+        {
+          "title": "Pemasangan GPS Collar untuk Memantau Jalur Jelajah Gajah di Riau",
+          "publisher": "BRIN & BKSDA Riau",
+          "date": "2024",
+          "url": "https://www.brin.go.id",
+          "excerpt": "Telemetri GPS memungkinkan peringatan dini sebelum kawanan gajah melintasi kebun warga di koridor Tesso Nilo."
+        }
+      ],
+      "externalLinks": [
+        { "label": "IUCN Red List Profile", "url": "https://www.iucnredlist.org" }
+      ]
+    },
+    {
+      "id": "orangutan-sumatera",
+      "name": "Orangutan Sumatera",
+      "localName": "Orangutan Sumatera",
+      "scientificName": "Pongo abelii",
+      "englishName": "Sumatran Orangutan",
+      "iucnStatus": "CR",
+      "iucnCategory": "Kritis (Critically Endangered)",
+      "island": "Sumatera",
+      "region": "Sumatera",
+      "biogeographicZone": "Asiatis",
+      "locationName": "Ekosistem Leuser, Aceh & Sumatera Utara",
+      "coordinates": [3.45, 97.60],
+      "populationEstimate": "± 13.800 individu",
+      "populationTrend": "Menurun",
+      "summary": "Kera besar arboreal endemik bagian utara Sumatera dengan rambut berwarna jingga kemerahan terang dan postur wajah yang ramping.",
+      "threats": [
+        "Perambahan Hutan Lindung dan Taman Nasional untuk komoditas perkebunan",
+        "Pembangunan proyek infrastruktur jalan dan energi di batas koridor Leuser",
+        "Perdagangan gelap anakan orangutan"
+      ],
+      "taxonomy": {
+        "kingdom": "Animalia",
+        "phylum": "Chordata",
+        "class": "Mammalia",
+        "order": "Primates",
+        "family": "Hominidae",
+        "genus": "Pongo",
+        "species": "Pongo abelii"
+      },
+      "biogeography": "Berevolusi di hutan tropis basah dataran rendah sebelah utara Danau Toba, berbatasan ekologis dengan wilayah persebaran Pongo tapanuliensis di selatan.",
+      "distributionDescription": "Terpusat di Kawasan Ekosistem Leuser (KEL) membentang dari Nanggroe Aceh Darussalam hingga Sumatera Utara.",
+      "migrationWaypoints": [
+        [3.80, 97.20],
+        [3.45, 97.60],
+        [3.10, 98.10]
+      ],
+      "funFacts": [
+        "Hampir seluruh masa hidupnya dihabiskan di atas tajuk pohon dan jarang menginjak tanah untuk menghindari predator harimau.",
+        "Menggunakan ranting pohon sebagai alat bantu untuk mencongkel biji buah berbulu dan madu lebah hutan."
+      ],
+      "imageUrl": "https://images.unsplash.com/photo-1502082553048-f009c37129b9?auto=format&fit=crop&w=900&q=80",
+      "conservationAction": "Stasiun riset Ketambe dan program rehabilitasi pelepasliaran di Cagar Alam Jantho oleh Yayasan Ekosistem Lestari (YEL).",
+      "wikiTitle": "Orangutan_sumatera",
+      "mediaReferences": [
+        {
+          "title": "Pelepasliaran Orangutan Hasil Rehabilitasi ke Alam Liar Jantho",
+          "publisher": "Mongabay Indonesia",
+          "date": "2024",
+          "url": "https://www.mongabay.co.id",
+          "excerpt": "Konservasi orangutan eks-peliharaan berhasil membentuk populasi liar baru yang mandiri di Aceh Besar."
+        }
+      ],
+      "externalLinks": [
+        { "label": "IUCN Red List Profile", "url": "https://www.iucnredlist.org" }
+      ]
+    },
+    {
+      "id": "badak-jawa",
+      "name": "Badak Jawa",
+      "localName": "Badak Jawa",
+      "scientificName": "Rhinoceros sondaicus",
+      "englishName": "Javan Rhinoceros",
+      "iucnStatus": "CR",
+      "iucnCategory": "Kritis (Critically Endangered)",
+      "island": "Jawa",
+      "region": "Jawa",
+      "biogeographicZone": "Asiatis",
+      "locationName": "Taman Nasional Ujung Kulon, Banten",
+      "coordinates": [-6.75, 105.35],
+      "populationEstimate": "± 76 - 80 individu",
+      "populationTrend": "Kritis Stagnan",
+      "summary": "Mamalia besar paling terancam punah di dunia dengan cula tunggal. Saat ini populasinya terkonsentrasi semata-mata di Semenanjung Ujung Kulon.",
+      "threats": [
+        "Invasif gulma pohon langkap (Arenga obtusifolia) yang menutup pakan alami",
+        "Ancaman bencana vulkanik dan tsunami letusan Gunung Anak Krakatau",
+        "Depresi perkawinan sekerabat (inbreeding depression) karena populasi terisolasi",
+        "Risiko penularan penyakit parasit dari ternak kerbau liar"
+      ],
+      "taxonomy": {
+        "kingdom": "Animalia",
+        "phylum": "Chordata",
+        "class": "Mammalia",
+        "order": "Perissodactyla",
+        "family": "Rhinocerotidae",
+        "genus": "Rhinoceros",
+        "species": "Rhinoceros sondaicus"
+      },
+      "biogeography": "Dahulu menjelajahi Asia Tenggara hingga daratan Jawa sebelum menyusut drastis akibat tekanan manusia pasca-zaman es.",
+      "distributionDescription": "Hanya hidup di semenanjung Taman Nasional Ujung Kulon, ujung barat Pulau Jawa.",
+      "migrationWaypoints": [
+        [-6.72, 105.28],
+        [-6.75, 105.33],
+        [-6.78, 105.38],
+        [-6.82, 105.42],
+        [-6.76, 105.47]
+      ],
+      "funFacts": [
+        "Hanya memiliki satu cula berukuran 20-25 cm, berbeda dengan badak Afrika yang bercula ganda.",
+        "Bibir atasnya berbentuk kait fleksibel (prehensile) untuk memetik pucuk ranting muda dan buah hutan."
+      ],
+      "imageUrl": "https://images.unsplash.com/photo-1575550959106-5a7defe28b56?auto=format&fit=crop&w=900&q=80",
+      "conservationAction": "Pemantauan 24 jam dengan 100+ kamera jebak otomatis, penjagaan patroli Rhino Protection Unit (RPU), dan pemulihan habitat pakan seluas ratusan hektar.",
+      "wikiTitle": "Badak_jawa",
+      "mediaReferences": [
+        {
+          "title": "Kelahiran Anak Badak Jawa Baru Terpantau Kamera Jebak Ujung Kulon",
+          "publisher": "Ditjen KSDAE Kementerian LHK",
+          "date": "2024",
+          "url": "https://ksdae.menlhk.go.id",
+          "excerpt": "Rekaman visual membuktikan badak jawa betina bernama Kasih melahirkan anakan baru dalam kondisi sehat."
+        }
+      ],
+      "externalLinks": [
+        { "label": "IUCN Red List Profile", "url": "https://www.iucnredlist.org" }
+      ]
+    },
+    {
+      "id": "elang-jawa",
+      "name": "Elang Jawa",
+      "localName": "Elang Jawa",
+      "scientificName": "Nisaetus bartelsi",
+      "englishName": "Javan Hawk-Eagle",
+      "iucnStatus": "EN",
+      "iucnCategory": "Genting (Endangered)",
+      "island": "Jawa",
+      "region": "Jawa",
+      "biogeographicZone": "Asiatis",
+      "locationName": "Taman Nasional Gunung Gede Pangrango & TN Gunung Halimun Salak",
+      "coordinates": [-6.78, 106.98],
+      "populationEstimate": "± 300 - 500 pasang berkembang biak",
+      "populationTrend": "Menurun",
+      "summary": "Burung pemangsa endemik Jawa yang menjadi model lambang negara Republik Indonesia (Garuda Pancasila). Memiliki jambul khas di kepalanya.",
+      "threats": [
+        "Fragmentasi hutan pegunungan primer di seluruh daratan Pulau Jawa",
+        "Perburuan liar untuk koleksi satwa pemangsa ilegal",
+        "Masa reproduksi yang lambat, hanya bertelur satu butir per 2-3 tahun"
+      ],
+      "taxonomy": {
+        "kingdom": "Animalia",
+        "phylum": "Chordata",
+        "class": "Aves",
+        "order": "Accipitriformes",
+        "family": "Accipitridae",
+        "genus": "Nisaetus",
+        "species": "Nisaetus bartelsi"
+      },
+      "biogeography": "Burung pemangsa kanopi endemik lereng pegunungan hutan hujan tropis basah Pulau Jawa.",
+      "distributionDescription": "Kantung hutan sisa di pegunungan Jawa Barat, Jawa Tengah, dan Jawa Timur (TN Bromo Tengger Semeru dan TN Meru Betiri).",
+      "migrationWaypoints": [
+        [-6.72, 106.65],
+        [-6.78, 106.98],
+        [-7.15, 107.55],
+        [-7.55, 110.45],
+        [-8.05, 112.92]
+      ],
+      "funFacts": [
+        "Memiliki jambul tegak terdiri atas 2-4 bulu sepanjang hingga 12 cm di mahkota kepalanya.",
+        "Merupakan predator kanopi puncak yang memburu tupai terbang, musang, monyet ekor panjang, dan burung hutan."
+      ],
+      "imageUrl": "https://images.unsplash.com/photo-1611689342806-0863700ce1e4?auto=format&fit=crop&w=900&q=80",
+      "conservationAction": "Pusat Suaka Satwa Elang Jawa (PSSEJ) di Loji Halimun Salak dan program adopsi pohon sarang bersama komunitas lokal.",
+      "wikiTitle": "Elang_jawa",
+      "mediaReferences": [
+        {
+          "title": "Pusat Konservasi Elang Jawa Lepasliarkan Pasangan Garuda Muda ke Halimun Salak",
+          "publisher": "Mongabay Indonesia",
+          "date": "2023",
+          "url": "https://www.mongabay.co.id",
+          "excerpt": "Pelepasliaran Elang Jawa bertujuan mengisi ceruk ekologis di kantung hutan dataran tinggi Jawa Barat."
+        }
+      ],
+      "externalLinks": [
+        { "label": "IUCN Red List Profile", "url": "https://www.iucnredlist.org" }
+      ]
     },
     {
       "id": "orangutan-kalimantan",
       "name": "Orangutan Kalimantan",
+      "localName": "Orangutan Kalimantan",
       "scientificName": "Pongo pygmaeus",
       "englishName": "Bornean Orangutan",
       "iucnStatus": "CR",
       "iucnCategory": "Kritis (Critically Endangered)",
       "island": "Kalimantan",
-      "locationName": "Taman Nasional Tanjung Puting & Sebangau, Kalteng",
+      "region": "Kalimantan",
+      "biogeographicZone": "Asiatis",
+      "locationName": "Taman Nasional Tanjung Puting & TN Sebangau, Kalimantan Tengah",
       "coordinates": [-2.85, 111.95],
       "populationEstimate": "± 57.000 individu",
-      "populationTrend": "Menurun Drastis (kehilangan 50% habitat dalam 60 tahun)",
+      "populationTrend": "Menurun Drastis",
+      "summary": "Kera besar pohon asli Kalimantan dengan mantel bulu cokelat gelap tebal dan bantalan pipi (flanges) menonjol pada pejantan dominan.",
       "threats": [
-        "Kebakaran hutan dan pengeringan lahan gambut skala besar",
-        "Perambahan liar dan penebangan kayu berskala industri",
-        "Perburuan anak orangutan untuk perdagangan hewan peliharaan eksotis",
-        "Perubahan tutupan lahan memisahkan kelompok genetika"
+        "Pengeringan dan kebakaran lahan gambut musiman",
+        "Konversi hutan hujan tropis dataran rendah menjadi perkebunan kelapa sawit",
+        "Perburuan dan fragmentasi blok koridor ekologis"
       ],
       "taxonomy": {
         "kingdom": "Animalia",
@@ -192,8 +365,8 @@
         "genus": "Pongo",
         "species": "Pongo pygmaeus"
       },
-      "biogeography": "Primata kera besar arboreal asli Paparan Sunda bagian timur. Keberadaan Orangutan di Kalimantan terkait erat dengan ekosistem hutan dipterokarpa dan hutan rawa gambut yang kaya kanopi pepohonan buah tropis.",
-      "distributionDescription": "Hutan hujan dataran rendah dan rawa gambut Kalimantan Tengah, Barat, dan Timur hingga perbatasan Sarawak/Sabah.",
+      "biogeography": "Spesies kera besar khas hutan dipterokarpa dan hutan rawa gambut Paparan Sunda bagian timur.",
+      "distributionDescription": "Hutan hujan dataran rendah dan rawa gambut Kalimantan Tengah, Kalimantan Barat, dan Kalimantan Timur.",
       "migrationWaypoints": [
         [-2.70, 111.85],
         [-2.85, 111.95],
@@ -202,251 +375,46 @@
         [-1.10, 114.50]
       ],
       "funFacts": [
-        "Membagi 97% DNA yang identik dengan manusia, memperlihatkan kecerdasan menggunakan alat batu dan ranting.",
-        "Merupakan 'Petani Hutan' (seed disperser) krusial; tanpa mereka ribuan spesies pohon hutan tropis gagal beregenerasi.",
-        "Setiap malam membangun sarang dedaunan baru di atas dahan tinggi dalam waktu kurang dari 10 menit."
+        "Membagi sekitar 97% susunan DNA yang identik dengan manusia modern.",
+        "Merupakan agen penyebar biji pohon hutan (seed disperser) kunci yang meregenerasi hutan tropis Kalimantan.",
+        "Membangun sarang ranting baru di ketinggian pohon setiap sore hari dalam waktu kurang dari 10 menit."
       ],
       "imageUrl": "https://images.unsplash.com/photo-1541781774459-bb2af2f05b55?auto=format&fit=crop&w=900&q=80",
-      "conservationAction": "Pusat rehabilitasi pelepasliaran (BOS Foundation & Orangutan Foundation International), restorasi sekat kanal gambut di Sebangau, serta advokasi hutan desa (Hutan Kemasyarakatan).",
-      "wikiTitle": "Orangutan_kalimantan"
-    },
-    {
-      "id": "jalak-bali",
-      "name": "Jalak Bali",
-      "scientificName": "Leucopsar rothschildi",
-      "englishName": "Bali Myna",
-      "iucnStatus": "CR",
-      "iucnCategory": "Kritis (Critically Endangered)",
-      "island": "Bali",
-      "locationName": "Taman Nasional Bali Barat (Semenanjung Prapat Agung)",
-      "coordinates": [-8.15, 114.45],
-      "populationEstimate": "± 450 - 500 ekor (alam liar & penangkaran)",
-      "populationTrend": "Meningkat Berkat Reintroduksi",
-      "threats": [
-        "Perburuan liar bernilai tinggi untuk satwa kicau sangkar",
-        "Predasi alami oleh biawak dan ular sanca terhadap anakan",
-        "Keterbatasan rongga pohon alami untuk sarang berkembang biak",
-        "Tekanan ekspansi pariwisata di sekitar Bali Utara"
+      "conservationAction": "Restorasi sekat kanal gambut di Sebangau serta pengelolaan suaka pelepasliaran oleh BOS Foundation dan OFI.",
+      "wikiTitle": "Orangutan_kalimantan",
+      "mediaReferences": [
+        {
+          "title": "Restorasi Rawa Gambut Sebangau Jaga Habitat Alami Orangutan",
+          "publisher": "Mongabay Indonesia",
+          "date": "2024",
+          "url": "https://www.mongabay.co.id",
+          "excerpt": "Pembasahan kembali lahan gambut bekas kanal ilegal efektif mencegah kebakaran dan memulihkan habitat kera besar."
+        }
       ],
-      "taxonomy": {
-        "kingdom": "Animalia",
-        "phylum": "Chordata",
-        "class": "Aves",
-        "order": "Passeriformes",
-        "family": "Sturnidae",
-        "genus": "Leucopsar",
-        "species": "Leucopsar rothschildi"
-      },
-      "biogeography": "Satu-satunya spesies burung endemik absolut Pulau Bali (tidak ditemukan di pulau Jawa atau Lombok meski secara geografis sangat berdekatan). Terisolasi di ekosistem hutan musim kering dan savana pantai Bali barat.",
-      "distributionDescription": "Hanya hidup di hutan musim kering Semenanjung Prapat Agung dan Pulau Menjangan, Bali Barat.",
-      "migrationWaypoints": [
-        [-8.14, 114.42],
-        [-8.15, 114.45],
-        [-8.18, 114.49],
-        [-8.22, 114.53]
-      ],
-      "funFacts": [
-        "Mempunyai bulu putih salju bersih dengan topeng biru kobalt mencolok tanpa bulu di sekitar matanya.",
-        "Merupakan spesies monogami sejati; pasangan Jalak Bali setia seumur hidup dan sering menari saling memberi salam.",
-        "Ditetapkan sebagai lambang fauna resmi Provinsi Bali sejak tahun 1991."
-      ],
-      "imageUrl": "https://images.unsplash.com/photo-1552728089-57bdde30beb3?auto=format&fit=crop&w=900&q=80",
-      "conservationAction": "Program penangkaran kolaboratif asosiasi APB-B (Asosiasi Penangkar Burung Bali), pemasangan sarang boks anti predator, pelepasan reguler di Nusa Penida dan TN Bali Barat.",
-      "wikiTitle": "Jalak_bali"
-    },
-    {
-      "id": "burung-cendrawasih",
-      "name": "Cendrawasih Kuning-Besar",
-      "scientificName": "Paradisaea apoda",
-      "englishName": "Greater Bird-of-paradise",
-      "iucnStatus": "LC",
-      "iucnCategory": "Berisiko Rendah (Least Concern) / Terancam di Lokal",
-      "island": "Papua",
-      "locationName": "Cagar Alam Pegunungan Arfak & Lembah Baliem, Papua",
-      "coordinates": [-2.50, 140.20],
-      "populationEstimate": "Stabil di hutan pedalaman, menurun di batas kota",
-      "populationTrend": "Menurun Lokal",
-      "threats": [
-        "Perburuan untuk mahkota adat dan cendera mata upacara",
-        "Penebangan hutan perawan untuk pembukaan lahan perkebunan",
-        "Pembangunan infrastruktur menembus hutan primer pulau Papua",
-        "Perubahan mikroklimat dataran tinggi"
-      ],
-      "taxonomy": {
-        "kingdom": "Animalia",
-        "phylum": "Chordata",
-        "class": "Aves",
-        "order": "Passeriformes",
-        "family": "Paradisaeidae",
-        "genus": "Paradisaea",
-        "species": "Paradisaea apoda"
-      },
-      "biogeography": "Perwakilan khas zoogeografi Paparan Sahul (Australis). Burung Cendrawasih berevolusi di wilayah Papua dan pulau sekitarnya tanpa kompetisi mamalia eutheria berkat isolasi benua kuno Gondwana.",
-      "distributionDescription": "Hutan hujan kanopi tinggi di daratan Papua, Kepulauan Aru, dan pulau-pulau satelit sekitarnya.",
-      "migrationWaypoints": [
-        [-0.90, 134.00],
-        [-1.80, 136.50],
-        [-2.50, 140.20],
-        [-4.20, 138.80]
-      ],
-      "funFacts": [
-        "Diberi nama 'apoda' (tanpa kaki) oleh penjelajah Eropa kuno karena kulit yang diawetkan pedagang dahulu dipotong kakinya, memicu mitos burung yang melayang abadi di surga.",
-        "Pejantan melakukan ritual tarian lek dramatis di puncak pohon tertinggi untuk memamerkan bulu rumbai kuning keemasannya kepada betina.",
-        "Diakui dunia sebagai 'Birds of Paradise' karena keindahan bulu dan tarian perkawinannya yang tiada tara."
-      ],
-      "imageUrl": "https://images.unsplash.com/photo-1546182990-dffeafbe841d?auto=format&fit=crop&w=900&q=80",
-      "conservationAction": "Inisiasi Hutan Adat Papua berbasis hak ulayat, gerakan penggantian mahkota bulu asli dengan bulu tiruan ramah lingkungan pada festival budaya adat, dan ekowisata birdwatching berkelanjutan di Nimbokrang.",
-      "wikiTitle": "Cenderawasih_kuning-besar"
-    },
-    {
-      "id": "anoa",
-      "name": "Anoa Dataran Rendah",
-      "scientificName": "Bubalus depressicornis",
-      "englishName": "Lowland Anoa",
-      "iucnStatus": "EN",
-      "iucnCategory": "Genting (Endangered)",
-      "island": "Sulawesi",
-      "locationName": "Taman Nasional Lore Lindu & Bogani Nani Wartabone",
-      "coordinates": [-1.32, 120.15],
-      "populationEstimate": "Kurang dari 2.500 individu dewasa",
-      "populationTrend": "Menurun Tajam",
-      "threats": [
-        "Perburuan liar untuk konsumsi daging liar (bushmeat)",
-        "Tambang nikel dan perambahan hutan sekunder di Sulawesi",
-        "Fragmentasi habitat yang memecah populasi menjadi kantung kecil",
-        "Pertanian berpindah yang mengikis hutan dataran rendah"
-      ],
-      "taxonomy": {
-        "kingdom": "Animalia",
-        "phylum": "Chordata",
-        "class": "Mammalia",
-        "order": "Artiodactyla",
-        "family": "Bovidae",
-        "genus": "Bubalus",
-        "species": "Bubalus depressicornis"
-      },
-      "biogeography": "Mamalia berkuku khas zona peralihan Wallacea Sulawesi. Anoa mewakili bentuk kerdil (dwarfism) dari rumpun sapi liar purba Asia yang terisolasi di Sulawesi sejak jutaan tahun lalu.",
-      "distributionDescription": "Hutan hujan primer lembab di Sulawesi bagian utara, tengah, dan tenggara.",
-      "migrationWaypoints": [
-        [0.60, 123.50],
-        [-0.40, 121.80],
-        [-1.32, 120.15],
-        [-2.50, 121.20],
-        [-3.90, 122.30]
-      ],
-      "funFacts": [
-        "Sering dijuluki 'Sapi Hutan Mini' karena tingginya hanya sekitar 85-90 cm pada bahunya, sapi liar terkecil di bumi.",
-        "Tanduknya berbentuk segitiga pipih runcing mengarah lurus ke belakang, memudahkan mereka berlari menembus vegetasi semak lebat.",
-        "Merupakan satwa soliter pemalu yang gemar berkubang di mata air mineral dan menjilat lempung kaya garam (salt licks)."
-      ],
-      "imageUrl": "https://images.unsplash.com/photo-1535083783855-76ae62b2914e?auto=format&fit=crop&w=900&q=80",
-      "conservationAction": "Pusat Riset Anoa Breeding Center (ABC) Manado bekerja sama dengan Balai Penerapan Standar Lingkungan Hidup dan Kehutanan (BPSLHK), patroli perbatasan hutan cagar alam.",
-      "wikiTitle": "Anoa_dataran_rendah"
-    },
-    {
-      "id": "babirusa",
-      "name": "Babirusa Sulawesi",
-      "scientificName": "Babyrousa celebensis",
-      "englishName": "North Sulawesi Babirusa",
-      "iucnStatus": "VU",
-      "iucnCategory": "Rentan (Vulnerable)",
-      "island": "Sulawesi",
-      "locationName": "Suaka Margasatwa Nantu & TN Bogani Nani Wartabone, Gorontalo",
-      "coordinates": [0.75, 122.30],
-      "populationEstimate": "± 4.000 individu",
-      "populationTrend": "Menurun",
-      "threats": [
-        "Perburuan dengan jerat kawat nilon dan anjing pemburu",
-        "Kehilangan tutupan hutan akibat perkebunan kelapa sawit dan jagung",
-        "Aktivitas tambang emas tanpa izin di bantaran sungai dalam hutan lindung",
-        "Isolasi populasi sub-populasi di Semenanjung Utara"
-      ],
-      "taxonomy": {
-        "kingdom": "Animalia",
-        "phylum": "Chordata",
-        "class": "Mammalia",
-        "order": "Artiodactyla",
-        "family": "Suidae",
-        "genus": "Babyrousa",
-        "species": "Babyrousa celebensis"
-      },
-      "biogeography": "Satwa endemik sejati kawasan Wallacea. Famili Suidae purba yang memisahkan diri dari garis babi Eurasia sejak masa Oligosen. Garis anatominya unik karena sistem pencernaan mendekati ruminansia (pemamah biak semu).",
-      "distributionDescription": "Hutan pedalaman tropis Sulawesi Utara dan Gorontalo serta kepulauan Togian.",
-      "migrationWaypoints": [
-        [0.85, 122.10],
-        [0.75, 122.30],
-        [0.65, 122.65],
-        [0.55, 123.10]
-      ],
-      "funFacts": [
-        "Taring atas pejantan tumbuh menembus kulit moncong atas dan melengkung ke belakang mengarah ke mata seperti tanduk rusa.",
-        "Kulitnya relatif tidak berbulu dan berwarna abu-abu kecokelatan mirip kulit gajah.",
-        "Bukan omnivora pemakan bangkai seperti babi hutan biasa; babirusa lebih suka memakan buah hutan yang jatuh, daun muda, dan jamur."
-      ],
-      "imageUrl": "https://images.unsplash.com/photo-1563281577-a7be47e20db9?auto=format&fit=crop&w=900&q=80",
-      "conservationAction": "Pengamanan ketat kawasan Suaka Margasatwa Nantu oleh Yayasan Adudu Nantu Internasional (YANI) bersama BKSDA Gorontalo, menjaga kubangan mineral Adudu.",
-      "wikiTitle": "Babirusa_sulawesi"
-    },
-    {
-      "id": "tarsius",
-      "name": "Tarsius Tangkoko",
-      "scientificName": "Tarsius spectrumgurskyae",
-      "englishName": "Gursky's Spectral Tarsier",
-      "iucnStatus": "VU",
-      "iucnCategory": "Rentan (Vulnerable)",
-      "island": "Sulawesi",
-      "locationName": "Cagar Alam Tangkoko Batuangus, Bitung, Sulawesi Utara",
-      "coordinates": [1.53, 125.15],
-      "populationEstimate": "Terfragmentasi di hutan lindung",
-      "populationTrend": "Menurun Akibat Hilangnya Pohon Ficus Tua",
-      "threats": [
-        "Penebangan pohon beringin pencekik (Ficus) yang jadi sarang tidurnya",
-        "Polusi cahaya dari pemukiman yang mengganggu navigasi nokturnal",
-        "Serangan kucing domestik liar di perbatasan desa sekitar cagar alam",
-        "Penggunaan pestisida yang membunuh serangga sebagai pakan utama"
-      ],
-      "taxonomy": {
-        "kingdom": "Animalia",
-        "phylum": "Chordata",
-        "class": "Mammalia",
-        "order": "Primates",
-        "family": "Tarsiidae",
-        "genus": "Tarsius",
-        "species": "Tarsius spectrumgurskyae"
-      },
-      "biogeography": "Primata purba endemik pulau Sulawesi dan pulau sekitarnya di batas timur Wallacea. Fosil famili Tarsiidae telah ada sejak 45 juta tahun silam, dan isolasi Sulawesi mempertahankan keanekaragaman spesiasi tarsius tertinggi di dunia.",
-      "distributionDescription": "Hutan pesisir dan perbukitan Sulawesi bagian utara, khususnya semenanjung Minahasa.",
-      "migrationWaypoints": [
-        [1.48, 125.08],
-        [1.53, 125.15],
-        [1.58, 125.18]
-      ],
-      "funFacts": [
-        "Salah satu primata terkecil di dunia dengan berat hanya 100-140 gram (seukuran telapak tangan manusia).",
-        "Memiliki bola mata berukuran lebih besar dibanding otaknya; bola matanya tidak dapat melirik sehingga lehernya bisa berputar 180 derajat ke kiri dan kanan.",
-        "Dapat melompat sejauh 40 kali panjang tubuhnya dari satu batang pohon ke batang lainnya di kegelapan malam."
-      ],
-      "imageUrl": "https://images.unsplash.com/photo-1540573133985-87b6da6d54a9?auto=format&fit=crop&w=900&q=80",
-      "conservationAction": "Ekowisata malam berpemandu berbasis komunitas di Tangkoko, perlindungan pohon ficus berusia ratusan tahun dari perambahan, dan riset akustik panggilan vokal duet.",
-      "wikiTitle": "Tarsius"
+      "externalLinks": [
+        { "label": "IUCN Red List Profile", "url": "https://www.iucnredlist.org" }
+      ]
     },
     {
       "id": "bekantan",
       "name": "Bekantan",
+      "localName": "Bekantan (Kera Belanda)",
       "scientificName": "Nasalis larvatus",
       "englishName": "Proboscis Monkey",
       "iucnStatus": "EN",
       "iucnCategory": "Genting (Endangered)",
       "island": "Kalimantan",
-      "locationName": "Hutan Mangrove Tarakan & Pesisir Kuala Samboja, Kalimantan",
+      "region": "Kalimantan",
+      "biogeographicZone": "Asiatis",
+      "locationName": "Kawasan Hutan Mangrove Tarakan & Pesisir Kuala Samboja",
       "coordinates": [-1.02, 117.05],
       "populationEstimate": "± 20.000 individu",
       "populationTrend": "Menurun",
+      "summary": "Primata berhidung panjang menggelantung dan berperut buncit yang hidup berkelompok di ekosistem mangrove dan hutan riparian Kalimantan.",
       "threats": [
-        "Konversi hutan bakau/mangrove dan rawa riparian menjadi tambak udang",
-        "Pencemaran limbah industri di muara-muara sungai Kalimantan",
-        "Kebakaran lahan gambut musiman yang membakar koridor sungai",
-        "Fragmentasi jalur jelajah tepi sungai oleh pemukiman dan dermaga"
+        "Konversi hutan mangrove pesisir menjadi tambak udang intensif",
+        "Pencemaran limbah industri dan pertambangan di aliran sungai utama",
+        "Fragmentasi jalur jelajah tepi sungai oleh permukiman dan pelabuhan"
       ],
       "taxonomy": {
         "kingdom": "Animalia",
@@ -457,8 +425,8 @@
         "genus": "Nasalis",
         "species": "Nasalis larvatus"
       },
-      "biogeography": "Monopoli ekologis pulau Kalimantan (Borneo). Spesialis ekosistem estuari, delta, rawa nipah, dan mangrove di pesisir Paparan Sunda yang tidak pernah bermigrasi jauh dari bantaran sungai air tawar atau payau.",
-      "distributionDescription": "Hutan bakau pesisir dan hutan riparian sepanjang sungai-sungai utama di seluruh Pulau Kalimantan.",
+      "biogeography": "Spesialisasi ekologis Paparan Sunda yang beradaptasi secara ketat pada muara sungai dan rawa nipah Kalimantan.",
+      "distributionDescription": "Hutan bakau pesisir dan vegetasi riparian di Kalimantan Barat, Tengah, Selatan, dan Timur.",
       "migrationWaypoints": [
         [3.32, 117.58],
         [0.55, 117.40],
@@ -467,31 +435,738 @@
         [-3.30, 114.60]
       ],
       "funFacts": [
-        "Pejantan memiliki hidung besar menggelantung yang berfungsi sebagai ruang resonansi suara panggil serta menarik perhatian betina.",
-        "Kaki belakang berselaput sebagian membuatnya mampu berenang cepat menyeberangi sungai berarus deras dan menyelam sedalam 20 meter di bawah air.",
-        "Menjadi maskot fauna resmi pariwisata Kalimantan Selatan dan taman hiburan Dunia Fantasi (Dufan)."
+        "Hidung besar pada pejantan bertindak sebagai ruang resonansi untuk memperkuat suara panggilan wilayah.",
+        "Kaki belakangnya memiliki selaput renang parsial yang memungkinkan bekantan berenang menyeberangi muara sungai berbuaya."
       ],
       "imageUrl": "https://images.unsplash.com/photo-1574063413132-355dbfd83e25?auto=format&fit=crop&w=900&q=80",
-      "conservationAction": "Pembangunan Kawasan Konservasi Mangrove dan Bekantan (KKMB) di Tarakan, reboisasi tanaman bakau (Rhizophora) dan rambai (Sonneratia caseolaris), serta patroli ekosistem riparian.",
-      "wikiTitle": "Bekantan"
+      "conservationAction": "Penetapan Kawasan Ekosistem Esensial (KEE) koridor mangrove Samboja dan penanaman kembali pohon rambai (Sonneratia caseolaris).",
+      "wikiTitle": "Bekantan",
+      "mediaReferences": [
+        {
+          "title": "Perlindungan Koridor Mangrove Delta Mahakam bagi Populasi Bekantan",
+          "publisher": "Ditjen KSDAE Kementerian LHK",
+          "date": "2023",
+          "url": "https://ksdae.menlhk.go.id",
+          "excerpt": "Rehabilitasi hutan bakau seluas ribuan hektar memperluas wilayah pakan alami kelompok primata endemik Kalimantan."
+        }
+      ],
+      "externalLinks": [
+        { "label": "IUCN Red List Profile", "url": "https://www.iucnredlist.org" }
+      ]
+    },
+    {
+      "id": "macan-dahan-kalimantan",
+      "name": "Macan Dahan Kalimantan",
+      "localName": "Macan Dahan Kalimantan",
+      "scientificName": "Neofelis diardi",
+      "englishName": "Sunda Clouded Leopard",
+      "iucnStatus": "VU",
+      "iucnCategory": "Rentan (Vulnerable)",
+      "island": "Kalimantan",
+      "region": "Kalimantan",
+      "biogeographicZone": "Asiatis",
+      "locationName": "Taman Nasional Betung Kerihun & Kayan Mentarang",
+      "coordinates": [1.45, 113.85],
+      "populationEstimate": "± 4.000 individu dewasa",
+      "populationTrend": "Menurun",
+      "summary": "Kucing liar karnivora puncak di hutan pedalaman Kalimantan dengan motif awan gelap dan gigi taring terpanjang relatif terhadap ukuran tengkoraknya.",
+      "threats": [
+        "Hilangnya tutupan hutan lebat akibat penebangan kayu komersial",
+        "Perburuan ilegal untuk kulit dan taring",
+        "Penurunan ketersediaan mangsa ungulata dan primata kecil"
+      ],
+      "taxonomy": {
+        "kingdom": "Animalia",
+        "phylum": "Chordata",
+        "class": "Mammalia",
+        "order": "Carnivora",
+        "family": "Felidae",
+        "genus": "Neofelis",
+        "species": "Neofelis diardi"
+      },
+      "biogeography": "Spesies predator arboreal endemik kawasan biogeografi Sunda yang berpisah dari Neofelis nebulosa daratan Asia sekitar 1,4 juta tahun lalu.",
+      "distributionDescription": "Hutan hujan lebat pegunungan Heart of Borneo di Kalimantan Barat, Timur, dan Utara.",
+      "migrationWaypoints": [
+        [0.80, 112.50],
+        [1.45, 113.85],
+        [2.60, 115.40]
+      ],
+      "funFacts": [
+        "Memiliki pergelangan kaki belakang yang dapat berputar hingga 180 derajat, memungkinkannya turun pohon dengan kepala menghadap ke bawah.",
+        "Gigi taringnya mencapai panjang 5 cm, rasio proporsional terbesar di antara seluruh spesies kucing modern."
+      ],
+      "imageUrl": "https://images.unsplash.com/photo-1548767797-d8c844163c4c?auto=format&fit=crop&w=900&q=80",
+      "conservationAction": "Inisiatif lintas batas Heart of Borneo (HoB) untuk melindungi bentang hutan tropis utuh yang menyatukan koridor jelajah karnivora.",
+      "wikiTitle": "Macan_dahan_kalimantan",
+      "mediaReferences": [
+        {
+          "title": "Survei Kamera Jebak Konfirmasi Populasi Stabil Macan Dahan di Kayan Mentarang",
+          "publisher": "WWF Indonesia",
+          "date": "2024",
+          "url": "https://www.wwf.id",
+          "excerpt": "Hutan primer dataran tinggi Kalimantan Utara menjadi benteng pertahanan terakhir karnivora puncak hutan Sunda."
+        }
+      ],
+      "externalLinks": [
+        { "label": "IUCN Red List Profile", "url": "https://www.iucnredlist.org" }
+      ]
+    },
+    {
+      "id": "jalak-bali",
+      "name": "Jalak Bali",
+      "localName": "Curik Bali",
+      "scientificName": "Leucopsar rothschildi",
+      "englishName": "Bali Myna",
+      "iucnStatus": "CR",
+      "iucnCategory": "Kritis (Critically Endangered)",
+      "island": "Bali",
+      "region": "Bali",
+      "biogeographicZone": "Asiatis",
+      "locationName": "Taman Nasional Bali Barat (Semenanjung Prapat Agung)",
+      "coordinates": [-8.15, 114.45],
+      "populationEstimate": "± 450 - 500 ekor di alam bebas",
+      "populationTrend": "Meningkat Berkat Konservasi",
+      "summary": "Burung pengicau endemik Pulau Bali dengan bulu putih bersih, jambul indah, dan lingkaran kulit biru kobalt di sekeliling matanya.",
+      "threats": [
+        "Perburuan liar bernilai ekonomi tinggi untuk koleksi burung sangkar",
+        "Predasi anakan oleh ular sanca dan biawak di sarang alami",
+        "Sempitnya luasan habitat hutan musim kering alami di barat Pulau Bali"
+      ],
+      "taxonomy": {
+        "kingdom": "Animalia",
+        "phylum": "Chordata",
+        "class": "Aves",
+        "order": "Passeriformes",
+        "family": "Sturnidae",
+        "genus": "Leucopsar",
+        "species": "Leucopsar rothschildi"
+      },
+      "biogeography": "Endemik mikro pulau Bali di batas paling timur Paparan Sunda, berbatasan langsung dengan Selat Lombok yang merupakan jalur Garis Wallace.",
+      "distributionDescription": "Hutan musim kering dan savana Semenanjung Prapat Agung serta Pulau Menjangan di Taman Nasional Bali Barat.",
+      "migrationWaypoints": [
+        [-8.14, 114.42],
+        [-8.15, 114.45],
+        [-8.18, 114.49],
+        [-8.22, 114.53]
+      ],
+      "funFacts": [
+        "Pasangan Jalak Bali bersifat monogami seumur hidup dan memiliki ritual tarian saling menundukkan jambul.",
+        "Merupakan lambang fauna resmi Provinsi Bali yang ditetapkan sejak tahun 1991."
+      ],
+      "imageUrl": "https://images.unsplash.com/photo-1552728089-57bdde30beb3?auto=format&fit=crop&w=900&q=80",
+      "conservationAction": "Penangkaran kolaboratif bersama asosiasi penangkar APB-B dan pemasangan sarang boks anti-predator di kawasan Bali Barat.",
+      "wikiTitle": "Jalak_bali",
+      "mediaReferences": [
+        {
+          "title": "Populasi Jalak Bali di TN Bali Barat Capai Angka Tertinggi dalam Dua Dekade",
+          "publisher": "Ditjen KSDAE Kementerian LHK",
+          "date": "2024",
+          "url": "https://ksdae.menlhk.go.id",
+          "excerpt": "Sinergi penangkar lokal dan patroli kawasan hutan lindung berhasil mengembalikan populasi liar dari ambang kepunahan."
+        }
+      ],
+      "externalLinks": [
+        { "label": "IUCN Red List Profile", "url": "https://www.iucnredlist.org" }
+      ]
+    },
+    {
+      "id": "komodo",
+      "name": "Komodo",
+      "localName": "Ora (Komodo)",
+      "scientificName": "Varanus komodoensis",
+      "englishName": "Komodo Dragon",
+      "iucnStatus": "EN",
+      "iucnCategory": "Genting (Endangered)",
+      "island": "Nusa Tenggara",
+      "region": "Nusa Tenggara",
+      "biogeographicZone": "Wallacea",
+      "locationName": "Taman Nasional Komodo (Pulau Komodo, Rinca, Gili Motang)",
+      "coordinates": [-8.56, 119.49],
+      "populationEstimate": "± 3.100 individu",
+      "populationTrend": "Menurun",
+      "summary": "Kadal terbesar di dunia yang masih hidup, berevolusi melalui mekanisme gigantisme pulau di wilayah kepulauan Nusa Tenggara.",
+      "threats": [
+        "Penyusutan habitat akibat perubahan iklim dan kenaikan air laut",
+        "Penurunan ketersediaan mangsa utama (rusa timor) akibat perburuan",
+        "Aktivitas pariwisata massal yang mengganggu perilaku alami satwa"
+      ],
+      "taxonomy": {
+        "kingdom": "Animalia",
+        "phylum": "Chordata",
+        "class": "Reptilia",
+        "order": "Squamata",
+        "family": "Varanidae",
+        "genus": "Varanus",
+        "species": "Varanus komodoensis"
+      },
+      "biogeography": "Peninggalan fauna purba garis Wallacea kepulauan Sunda Kecil yang bertahan sebagai karnivora puncak berkat ketiadaan mamalia karnivora besar.",
+      "distributionDescription": "Pulau Komodo, Rinca, Gili Motang, Nusa Kode, serta kawasan cagar alam pesisir barat Pulau Flores (Wae Wuul).",
+      "migrationWaypoints": [
+        [-8.55, 119.45],
+        [-8.58, 119.50],
+        [-8.68, 119.65],
+        [-8.72, 119.72],
+        [-8.60, 119.85]
+      ],
+      "funFacts": [
+        "Dapat tumbuh hingga panjang 3 meter dengan bobot badan melampaui 70 kilogram.",
+        "Menggunakan lidah bercabang dan organ Jacobson untuk mendeteksi bau bangkai hingga jarak 9,5 kilometer.",
+        "Memiliki kelenjar racun di rahang bawah yang menyalurkan protein pencegah pembekuan darah pada luka mangsanya."
+      ],
+      "imageUrl": "https://images.unsplash.com/photo-1549480017-d76466a4b7e8?auto=format&fit=crop&w=900&q=80",
+      "conservationAction": "Penetapan zona inti perlindungan di Balai Taman Nasional Komodo, patroli SMART patrol perairan, dan pengaturan kuota daya dukung pengunjung.",
+      "wikiTitle": "Komodo",
+      "mediaReferences": [
+        {
+          "title": "Evaluasi Daya Dukung Wisata dan Perlindungan Habitat Komodo di Rinca",
+          "publisher": "BRIN",
+          "date": "2024",
+          "url": "https://www.brin.go.id",
+          "excerpt": "Riset daya dukung ekologis merekomendasikan pembatasan zonasi wisatawan guna mencegah stres pada populasi kadal purba."
+        }
+      ],
+      "externalLinks": [
+        { "label": "IUCN Red List Profile", "url": "https://www.iucnredlist.org" }
+      ]
+    },
+    {
+      "id": "anoa",
+      "name": "Anoa Dataran Rendah",
+      "localName": "Anoa Dataran Rendah",
+      "scientificName": "Bubalus depressicornis",
+      "englishName": "Lowland Anoa",
+      "iucnStatus": "EN",
+      "iucnCategory": "Genting (Endangered)",
+      "island": "Sulawesi",
+      "region": "Sulawesi",
+      "biogeographicZone": "Wallacea",
+      "locationName": "Taman Nasional Lore Lindu & Bogani Nani Wartabone",
+      "coordinates": [-1.32, 120.15],
+      "populationEstimate": "Kurang dari 2.500 individu dewasa",
+      "populationTrend": "Menurun Tajam",
+      "summary": "Spesies sapi liar terkecil di dunia endemik Sulawesi, bertanduk lurus segitiga meruncing ke belakang dengan habitat hutan lembap.",
+      "threats": [
+        "Perburuan liar untuk perdagangan daging satwa hutan (bushmeat)",
+        "Pembersihan hutan untuk pertambangan nikel dan perkebunan",
+        "Fragmentasi habitat yang memisahkan populasi menjadi kantung kecil"
+      ],
+      "taxonomy": {
+        "kingdom": "Animalia",
+        "phylum": "Chordata",
+        "class": "Mammalia",
+        "order": "Artiodactyla",
+        "family": "Bovidae",
+        "genus": "Bubalus",
+        "species": "Bubalus depressicornis"
+      },
+      "biogeography": "Contoh klasik dwarfisme pulau (island dwarfism) pada rumpun kerbau purba yang terisolasi di pulau Sulawesi kawasan Wallacea.",
+      "distributionDescription": "Hutan hujan primer dataran rendah lembap di Sulawesi bagian utara, tengah, dan tenggara.",
+      "migrationWaypoints": [
+        [0.60, 123.50],
+        [-0.40, 121.80],
+        [-1.32, 120.15],
+        [-2.50, 121.20],
+        [-3.90, 122.30]
+      ],
+      "funFacts": [
+        "Hanya setinggi 85-90 cm pada bahunya, menjadikannya spesies sapi liar terkecil di muka bumi.",
+        "Satwa soliter yang kerap berkubang di lumpur mata air mineral dan menjilat lempung garam alami (salt licks)."
+      ],
+      "imageUrl": "https://images.unsplash.com/photo-1535083783855-76ae62b2914e?auto=format&fit=crop&w=900&q=80",
+      "conservationAction": "Pusat Pengembangbiakan Anoa Breeding Center (ABC) Manado bekerjasama dengan BPSLHK dan BKSDA Sulawesi Utara.",
+      "wikiTitle": "Anoa_dataran_rendah",
+      "mediaReferences": [
+        {
+          "title": "Kelahiran Anoa di Pusat Penangkaran Manado Tambah Harapan Populasi Wallacea",
+          "publisher": "Ditjen KSDAE Kementerian LHK",
+          "date": "2024",
+          "url": "https://ksdae.menlhk.go.id",
+          "excerpt": "Anoa Breeding Center Manado berhasil membiakkan anakan anoa secara terkontrol guna pengayaan materi genetik."
+        }
+      ],
+      "externalLinks": [
+        { "label": "IUCN Red List Profile", "url": "https://www.iucnredlist.org" }
+      ]
+    },
+    {
+      "id": "babirusa",
+      "name": "Babirusa Sulawesi",
+      "localName": "Babirusa",
+      "scientificName": "Babyrousa celebensis",
+      "englishName": "North Sulawesi Babirusa",
+      "iucnStatus": "VU",
+      "iucnCategory": "Rentan (Vulnerable)",
+      "island": "Sulawesi",
+      "region": "Sulawesi",
+      "biogeographicZone": "Wallacea",
+      "locationName": "Suaka Margasatwa Nantu & TN Bogani Nani Wartabone",
+      "coordinates": [0.75, 122.30],
+      "populationEstimate": "± 4.000 individu",
+      "populationTrend": "Menurun",
+      "summary": "Spesies babi liar primitif dengan taring atas pada pejantan yang mencuat menembus kulit moncong dan melengkung ke arah dahi.",
+      "threats": [
+        "Perburuan jerat nilon di batas hutan lindung",
+        "Pengrusakan habitat tepi sungai akibat penambangan liar",
+        "Konversi hutan primer menjadi ladang monokultur"
+      ],
+      "taxonomy": {
+        "kingdom": "Animalia",
+        "phylum": "Chordata",
+        "class": "Mammalia",
+        "order": "Artiodactyla",
+        "family": "Suidae",
+        "genus": "Babyrousa",
+        "species": "Babyrousa celebensis"
+      },
+      "biogeography": "Garis keturunan Suidae purba yang memisahkan diri semenjak era Oligosen dan terkunci dalam ekosistem pulau Sulawesi.",
+      "distributionDescription": "Hutan pedalaman tropis lembap di Gorontalo, Sulawesi Utara, dan kepulauan sekitarnya.",
+      "migrationWaypoints": [
+        [0.85, 122.10],
+        [0.75, 122.30],
+        [0.65, 122.65],
+        [0.55, 123.10]
+      ],
+      "funFacts": [
+        "Taring atas pejantan tidak digunakan untuk mengunyah, melainkan untuk ritual adu kekuatan saat musim kawin.",
+        "Memiliki sistem pencernaan kompleks menyerupai pemamah biak semu untuk mencerna dedaunan berserat dan jamur hutan."
+      ],
+      "imageUrl": "https://images.unsplash.com/photo-1563281577-a7be47e20db9?auto=format&fit=crop&w=900&q=80",
+      "conservationAction": "Pengamanan ketat kubangan mineral Adudu di Suaka Margasatwa Nantu oleh Yayasan Adudu Nantu Internasional bersama BKSDA.",
+      "wikiTitle": "Babirusa_sulawesi",
+      "mediaReferences": [
+        {
+          "title": "Konservasi Kubangan Garam Adudu Selamatkan Ratusan Babirusa Nantu",
+          "publisher": "Mongabay Indonesia",
+          "date": "2023",
+          "url": "https://www.mongabay.co.id",
+          "excerpt": "Mata air mineral di dasar hutan Nantu menjadi pusat pertemuan alami kawanan babirusa dan anoa di Gorontalo."
+        }
+      ],
+      "externalLinks": [
+        { "label": "IUCN Red List Profile", "url": "https://www.iucnredlist.org" }
+      ]
+    },
+    {
+      "id": "tarsius",
+      "name": "Tarsius Tangkoko",
+      "localName": "Tarsius Tangkoko",
+      "scientificName": "Tarsius spectrumgurskyae",
+      "englishName": "Gursky's Spectral Tarsier",
+      "iucnStatus": "VU",
+      "iucnCategory": "Rentan (Vulnerable)",
+      "island": "Sulawesi",
+      "region": "Sulawesi",
+      "biogeographicZone": "Wallacea",
+      "locationName": "Cagar Alam Tangkoko Batuangus, Sulawesi Utara",
+      "coordinates": [1.53, 125.15],
+      "populationEstimate": "Terfragmentasi di hutan pantai & bukit",
+      "populationTrend": "Menurun",
+      "summary": "Primata nokturnal karnivora murni berukuran sekepalan tangan dengan bola mata besar yang tidak dapat melirik dan kemampuan melompat luar biasa.",
+      "threats": [
+        "Penebangan pohon beringin pencekik (Ficus) tempat bersarang tidur",
+        "Polusi cahaya dari permukiman tepi pantai yang mengganggu navigasi",
+        "Predasi oleh kucing peliharaan liar di sekitar perbatasan cagar alam"
+      ],
+      "taxonomy": {
+        "kingdom": "Animalia",
+        "phylum": "Chordata",
+        "class": "Mammalia",
+        "order": "Primates",
+        "family": "Tarsiidae",
+        "genus": "Tarsius",
+        "species": "Tarsius spectrumgurskyae"
+      },
+      "biogeography": "Garis primata purba Wallacea yang mempertahankan diversitas fosil hidup berkat isolasi tektonik Sulawesi selama puluhan juta tahun.",
+      "distributionDescription": "Semenanjung Minahasa, Bitung, hingga kawasan perbukitan Sulawesi bagian utara.",
+      "migrationWaypoints": [
+        [1.48, 125.08],
+        [1.53, 125.15],
+        [1.58, 125.18]
+      ],
+      "funFacts": [
+        "Satu-satunya kelompok primata yang merupakan karnivora sejati; memakan serangga, jangkrik, cicak, dan kepiting kecil.",
+        "Lehernya dapat berputar hingga 180 derajat ke kiri dan kanan untuk mengompensasi bola mata yang terpaku di rongga tengkorak."
+      ],
+      "imageUrl": "https://images.unsplash.com/photo-1540573133985-87b6da6d54a9?auto=format&fit=crop&w=900&q=80",
+      "conservationAction": "Ekowisata berpemandu berbasis masyarakat di Tangkoko dan pemetaan akustik panggilan duet teritorial.",
+      "wikiTitle": "Tarsius",
+      "mediaReferences": [
+        {
+          "title": "Bioakustik Duet Vokal Tarsius di Cagar Alam Tangkoko",
+          "publisher": "BRIN",
+          "date": "2024",
+          "url": "https://www.brin.go.id",
+          "excerpt": "Perekaman frekuensi suara vokal pasangan tarsius digunakan untuk mendata kepadatan populasi di kanopi malam hari."
+        }
+      ],
+      "externalLinks": [
+        { "label": "IUCN Red List Profile", "url": "https://www.iucnredlist.org" }
+      ]
+    },
+    {
+      "id": "maleo",
+      "name": "Burung Maleo",
+      "localName": "Maleo Senkawor",
+      "scientificName": "Macrocephalon maleo",
+      "englishName": "Maleo",
+      "iucnStatus": "CR",
+      "iucnCategory": "Kritis (Critically Endangered)",
+      "island": "Sulawesi",
+      "region": "Sulawesi",
+      "biogeographicZone": "Wallacea",
+      "locationName": "Taman Nasional Bogani Nani Wartabone & Suaka Margasatwa Bakiriang",
+      "coordinates": [0.55, 123.85],
+      "populationEstimate": "± 8.000 - 14.000 individu",
+      "populationTrend": "Menurun Drastis",
+      "summary": "Burung megapoda darat unik yang mengubur telurnya di pasir pantai berpasir panas bumi atau pasir vulkanik agar menetas secara alami.",
+      "threats": [
+        "Pencurian dan konsumsi telur maleo oleh manusia",
+        "Predasi sarang timbun oleh biawak, babi hutan, dan anjing peliharaan",
+        "Kerusakan jalur koridor hutan dari perbukitan menuju pantai peneluran"
+      ],
+      "taxonomy": {
+        "kingdom": "Animalia",
+        "phylum": "Chordata",
+        "class": "Aves",
+        "order": "Galliformes",
+        "family": "Megapodiidae",
+        "genus": "Macrocephalon",
+        "species": "Macrocephalon maleo"
+      },
+      "biogeography": "Burung famili Megapodiidae khas zona peralihan Wallacea yang berevolusi memanfaatkan sumber energi panas bumi geospasial Sulawesi.",
+      "distributionDescription": "Tersebar di hutan perbukitan dengan jalur menuju situs panas bumi di Sulawesi Utara, Gorontalo, dan Sulawesi Tengah.",
+      "migrationWaypoints": [
+        [0.85, 123.40],
+        [0.55, 123.85],
+        [0.30, 124.20]
+      ],
+      "funFacts": [
+        "Ukuran telurnya sekitar lima hingga delapan kali lebih besar daripada telur ayam ras biasa.",
+        "Anak maleo yang baru menetas dari kedalaman 1 meter pasir langsung mampu terbang mencari perlindungan di kanopi hutan."
+      ],
+      "imageUrl": "https://images.unsplash.com/photo-1544943910-4c1dc44a053c?auto=format&fit=crop&w=900&q=80",
+      "conservationAction": "Penetapan stasiun penetasan semi-alami (hatchery) yang dipagari kawat di Muara Pusian dan Bakiriang oleh WCS dan Balai TNBNW.",
+      "wikiTitle": "Maleo_senkawor",
+      "mediaReferences": [
+        {
+          "title": "Pelepasliaran Ribuan Anakan Maleo Hasil Penetasan Terjaga di TNBNW",
+          "publisher": "Ditjen KSDAE Kementerian LHK",
+          "date": "2024",
+          "url": "https://ksdae.menlhk.go.id",
+          "excerpt": "Metode kandang penetasan komunal terbukti menaikkan tingkat kelulushidupan anakan burung maleo hingga 80%."
+        }
+      ],
+      "externalLinks": [
+        { "label": "IUCN Red List Profile", "url": "https://www.iucnredlist.org" }
+      ]
+    },
+    {
+      "id": "kuskus-beruang-talaud",
+      "name": "Kuskus Beruang",
+      "localName": "Kuskus Beruang Sulawesi",
+      "scientificName": "Ailurops ursinus",
+      "englishName": "Sulawesi Bear Cuscus",
+      "iucnStatus": "VU",
+      "iucnCategory": "Rentan (Vulnerable)",
+      "island": "Sulawesi",
+      "region": "Sulawesi",
+      "biogeographicZone": "Wallacea",
+      "locationName": "Cagar Alam Tangkoko & Hutan Lindung Pegunungan Verbeek",
+      "coordinates": [-2.45, 121.40],
+      "populationEstimate": "Menurun di hutan dataran rendah",
+      "populationTrend": "Menurun",
+      "summary": "Mamalia berkantung (marsupialia) arboreal berbulu gelap tebal dengan ekor penggenggam (prehensile) yang bergerak lambat di kanopi atas hutan Sulawesi.",
+      "threats": [
+        "Perburuan langsung karena pergerakannya yang lamban di dahan pohon",
+        "Fragmentasi tutupan tajuk kanopi hutan primer",
+        "Perambahan hutan untuk pembukaan lahan pertanian"
+      ],
+      "taxonomy": {
+        "kingdom": "Animalia",
+        "phylum": "Chordata",
+        "class": "Mammalia",
+        "order": "Diprotodontia",
+        "family": "Phalangeridae",
+        "genus": "Ailurops",
+        "species": "Ailurops ursinus"
+      },
+      "biogeography": "Salah satu garis marsupial tertua yang menembus ke arah barat Garis Weber ke zona peralihan Wallacea.",
+      "distributionDescription": "Hutan hujan tropis Sulawesi dan pulau satelit seperti Pulau Buton, Muna, Peleng, dan Togian.",
+      "migrationWaypoints": [
+        [0.20, 123.10],
+        [-1.10, 122.30],
+        [-2.45, 121.40]
+      ],
+      "funFacts": [
+        "Meskipun berpenampilan mirip beruang kecil berbulu wol, satwa ini adalah mamalia marsupial yang merawat anaknya di dalam kantung perut.",
+        "Ekornya yang tidak berbulu di bagian ujung berfungsi sebagai 'tangan kelima' untuk mencengkeram dahan saat tidur siang."
+      ],
+      "imageUrl": "https://images.unsplash.com/photo-1579783900882-c0d3dad7b119?auto=format&fit=crop&w=900&q=80",
+      "conservationAction": "Perlindungan kanopi hutan primer dan penindakan perdagangan satwa dilindungi oleh BKSDA Sulawesi Tengah.",
+      "wikiTitle": "Kuskus_beruang_sulawesi",
+      "mediaReferences": [
+        {
+          "title": "Studi Ekologi Perilaku Makan Kuskus Beruang di Kanopi Sulawesi",
+          "publisher": "Jurnal Biologi Tropis BRIN",
+          "date": "2023",
+          "url": "https://www.brin.go.id",
+          "excerpt": "Riset menegaskan ketergantungan kuskus beruang pada daun muda spesies pohon hutan kanopi primer yang belum terganggu."
+        }
+      ],
+      "externalLinks": [
+        { "label": "IUCN Red List Profile", "url": "https://www.iucnredlist.org" }
+      ]
+    },
+    {
+      "id": "bidadari-halmahera",
+      "name": "Bidadari Halmahera",
+      "localName": "Burung Bidadari Halmahera",
+      "scientificName": "Semioptera wallacii",
+      "englishName": "Standardwing Bird-of-Paradise",
+      "iucnStatus": "LC",
+      "iucnCategory": "Risiko Rendah (Least Concern)",
+      "island": "Maluku",
+      "region": "Maluku",
+      "biogeographicZone": "Wallacea",
+      "locationName": "Taman Nasional Aketajawe-Lolobata, Pulau Halmahera",
+      "coordinates": [0.65, 127.85],
+      "populationEstimate": "Stabil di hutan pedalaman",
+      "populationTrend": "Menurun Lokal",
+      "summary": "Satu-satunya spesies burung cenderawasih yang mendiami kepulauan Maluku Utara di barat Garis Weber. Pejantan memiliki dua pasang bulu putih panjang di bahunya.",
+      "threats": [
+        "Konsesi pertambangan nikel skala besar di daratan Halmahera",
+        "Penebangan hutan primer untuk akses jalur logistik industri",
+        "Perburuan satwa endemik Maluku untuk perdagangan burung hias"
+      ],
+      "taxonomy": {
+        "kingdom": "Animalia",
+        "phylum": "Chordata",
+        "class": "Aves",
+        "order": "Passeriformes",
+        "family": "Paradisaeidae",
+        "genus": "Semioptera",
+        "species": "Semioptera wallacii"
+      },
+      "biogeography": "Distribusi terluar famili Paradisaeidae ke arah barat, ditemukan langsung oleh Alfred Russel Wallace di pulau Bacan dan Halmahera pada tahun 1858.",
+      "distributionDescription": "Hutan perbukitan tropis basah Pulau Halmahera, Morotai, Bacan, dan Kasiruta di Maluku Utara.",
+      "migrationWaypoints": [
+        [1.10, 128.20],
+        [0.65, 127.85],
+        [-0.45, 127.50]
+      ],
+      "funFacts": [
+        "Spesies cenderawasih pertama yang dikoleksi dan didokumentasikan secara ilmiah oleh Alfred Russel Wallace.",
+        "Saat melakukan tarian kawin, pejantan melebarkan jubah dada berwarna hijau zamrud mengilap sambil menegakkan bulu bahu putihnya."
+      ],
+      "imageUrl": "https://images.unsplash.com/photo-1546182990-dffeafbe841d?auto=format&fit=crop&w=900&q=80",
+      "conservationAction": "Pengamanan bentang hutan Aketajawe-Lolobata dan pengembangan ekowisata pengamatan burung (birdwatching) berbasis kearifan suku Togutil.",
+      "wikiTitle": "Bidadari_halmahera",
+      "mediaReferences": [
+        {
+          "title": "Ekowisata Birdwatching di Aketajawe Lolobata Berdayakan Komunitas Lokal",
+          "publisher": "Ditjen KSDAE Kementerian LHK",
+          "date": "2024",
+          "url": "https://ksdae.menlhk.go.id",
+          "excerpt": "Pengamatan burung cenderawasih bidadari di Halmahera menjadi alternatif ekonomi ramah lingkungan pengganti perburuan."
+        }
+      ],
+      "externalLinks": [
+        { "label": "IUCN Red List Profile", "url": "https://www.iucnredlist.org" }
+      ]
+    },
+    {
+      "id": "burung-cendrawasih",
+      "name": "Cendrawasih Kuning-Besar",
+      "localName": "Cenderawasih Kuning-Besar",
+      "scientificName": "Paradisaea apoda",
+      "englishName": "Greater Bird-of-paradise",
+      "iucnStatus": "LC",
+      "iucnCategory": "Risiko Rendah (Least Concern)",
+      "island": "Papua",
+      "region": "Papua",
+      "biogeographicZone": "Australis",
+      "locationName": "Cagar Alam Pegunungan Arfak & Lembah Nimbokrang, Papua",
+      "coordinates": [-2.50, 140.20],
+      "populationEstimate": "Stabil di hutan pedalaman utuh",
+      "populationTrend": "Menurun di dekat permukiman",
+      "summary": "Burung ikonik fauna Australis dengan rumbai bulu panggul berwarna kuning keemasan yang mekar memukau dalam tarian lek memikat betina.",
+      "threats": [
+        "Perburuan untuk mahkota adat cendera mata",
+        "Pembukaan hutan primer untuk perluasan perkebunan dan permukiman",
+        "Pembangunan jalan tembus menembus hutan rimba dataran rendah"
+      ],
+      "taxonomy": {
+        "kingdom": "Animalia",
+        "phylum": "Chordata",
+        "class": "Aves",
+        "order": "Passeriformes",
+        "family": "Paradisaeidae",
+        "genus": "Paradisaea",
+        "species": "Paradisaea apoda"
+      },
+      "biogeography": "Perwakilan khas zona biogeografi Paparan Sahul (Australis) yang berevolusi tanpa predator mamalia plasental berkat isolasi benua kuno Gondwana.",
+      "distributionDescription": "Hutan kanopi tinggi Papua dan Kepulauan Aru.",
+      "migrationWaypoints": [
+        [-0.90, 134.00],
+        [-1.80, 136.50],
+        [-2.50, 140.20],
+        [-4.20, 138.80]
+      ],
+      "funFacts": [
+        "Nama 'apoda' berarti tanpa kaki, karena spesimen kuno yang dikirim ke Eropa dahulu dipotong kakinya hingga memicu mitos burung yang melayang abadi di surga.",
+        "Pejantan melakukan ritual tarian lek dramatis bersama di atas dahan pohon tertinggi untuk memikat betina."
+      ],
+      "imageUrl": "https://images.unsplash.com/photo-1546182990-dffeafbe841d?auto=format&fit=crop&w=900&q=80",
+      "conservationAction": "Inisiasi Hutan Adat Papua berbasis hak ulayat dan gerakan penggantian mahkota bulu asli dengan bulu tiruan ramah lingkungan pada festival budaya.",
+      "wikiTitle": "Cenderawasih_kuning-besar",
+      "mediaReferences": [
+        {
+          "title": "Gerakan Mahkota Bulu Tiruan untuk Pelestarian Cenderawasih Papua",
+          "publisher": "Mongabay Indonesia",
+          "date": "2024",
+          "url": "https://www.mongabay.co.id",
+          "excerpt": "Tokoh adat Papua mengajak masyarakat beralih ke replika bulu cenderawasih untuk menjaga populasi burung surga di hutan adat."
+        }
+      ],
+      "externalLinks": [
+        { "label": "IUCN Red List Profile", "url": "https://www.iucnredlist.org" }
+      ]
+    },
+    {
+      "id": "kasuari-gelambir-ganda",
+      "name": "Kasuari Gelambir-Ganda",
+      "localName": "Kasuari Gelambir-Ganda",
+      "scientificName": "Casuarius casuarius",
+      "englishName": "Southern Cassowary",
+      "iucnStatus": "VU",
+      "iucnCategory": "Rentan (Vulnerable)",
+      "island": "Papua",
+      "region": "Papua",
+      "biogeographicZone": "Australis",
+      "locationName": "Taman Nasional Wasur & Pegunungan Foja, Papua",
+      "coordinates": [-8.50, 140.65],
+      "populationEstimate": "± 20.000 - 30.000 individu",
+      "populationTrend": "Menurun",
+      "summary": "Burung terberat di Asia-Pasifik yang tidak bisa terbang, berkaki kokoh dengan cakar belati maut sepanjang 12 cm dan mahkota helm bertanduk.",
+      "threats": [
+        "Perburuan tradisional menggunakan jerat perangkap",
+        "Tabrakan dengan kendaraan di jalur jalan trans-Papua",
+        "Penyempitan koridor hutan hujan dataran rendah"
+      ],
+      "taxonomy": {
+        "kingdom": "Animalia",
+        "phylum": "Chordata",
+        "class": "Aves",
+        "order": "Casuariiformes",
+        "family": "Casuariidae",
+        "genus": "Casuarius",
+        "species": "Casuarius casuarius"
+      },
+      "biogeography": "Burung purba tak terbang ordo Casuariiformes peninggalan lempeng benua Sahul yang menghubungkan Papua dan Australia utara.",
+      "distributionDescription": "Hutan hujan dataran rendah dan rawa lebat di seluruh daratan Papua serta Kepulauan Aru.",
+      "migrationWaypoints": [
+        [-2.50, 138.50],
+        [-4.80, 139.70],
+        [-8.50, 140.65]
+      ],
+      "funFacts": [
+        "Cakar jari tengahnya menyerupai belati tajam sepanjang 12 cm yang dapat mematikan predator saat disepakkan.",
+        "Merupakan pemencar biji pohon hutan terbesar di Papua; biji ratusan spesies pohon hanya dapat berkecambah setelah melewati saluran cernanya."
+      ],
+      "imageUrl": "https://images.unsplash.com/photo-1590486803833-1c5dc8ddd4c8?auto=format&fit=crop&w=900&q=80",
+      "conservationAction": "Pemasangan rambu perlintasan satwa di jalan Trans-Papua yang membelah Taman Nasional Wasur dan patroli batas hutan adat suku Kanume.",
+      "wikiTitle": "Kasuari_gelambir-ganda",
+      "mediaReferences": [
+        {
+          "title": "Peran Kunci Kasuari sebagai Penjaga Regenerasi Hutan Hujan Papua",
+          "publisher": "Pusat Riset Biosistematika dan Evolusi BRIN",
+          "date": "2024",
+          "url": "https://www.brin.go.id",
+          "excerpt": "Penelitian menunjukkan ketiadaan kasuari mengakibatkan kegagalan regenerasi pohon kanopi hutan berbuah besar."
+        }
+      ],
+      "externalLinks": [
+        { "label": "IUCN Red List Profile", "url": "https://www.iucnredlist.org" }
+      ]
+    },
+    {
+      "id": "kanguru-pohon-mantel-emas",
+      "name": "Kanguru Pohon Mantel-Emas",
+      "localName": "Kanguru Pohon Mantel-Emas",
+      "scientificName": "Dendrolagus pulcherrimus",
+      "englishName": "Golden-mantled Tree-kangaroo",
+      "iucnStatus": "CR",
+      "iucnCategory": "Kritis (Critically Endangered)",
+      "island": "Papua",
+      "region": "Papua",
+      "biogeographicZone": "Australis",
+      "locationName": "Pegunungan Foja & Torricelli, Papua",
+      "coordinates": [-2.75, 138.80],
+      "populationEstimate": "Kurang dari 500 individu dewasa",
+      "populationTrend": "Menurun Kritis",
+      "summary": "Marsupialia pohon langka dengan surai emas di leher dan pipi, beradaptasi melompat di tajuk pohon hutan pegunungan tinggi Papua.",
+      "threats": [
+        "Perburuan lokal untuk konsumsi daging liar",
+        "Perambahan hutan di kawasan penyangga pegunungan",
+        "Sensitivitas tinggi terhadap perubahan suhu akibat anomali iklim"
+      ],
+      "taxonomy": {
+        "kingdom": "Animalia",
+        "phylum": "Chordata",
+        "class": "Mammalia",
+        "order": "Diprotodontia",
+        "family": "Macropodidae",
+        "genus": "Dendrolagus",
+        "species": "Dendrolagus pulcherrimus"
+      },
+      "biogeography": "Garis keturunan kanguru Sahul yang mengalami radiasi adaptif kembali ke kehidupan kanopi pohon di pegunungan terisolasi utara Papua.",
+      "distributionDescription": "Hutan lumut pegunungan tinggi Pegunungan Foja, Kabupaten Sarmi, Papua.",
+      "migrationWaypoints": [
+        [-2.40, 138.50],
+        [-2.75, 138.80],
+        [-3.10, 139.10]
+      ],
+      "funFacts": [
+        "Mampu melompat dari tajuk pohon setinggi 18 meter ke tanah tanpa mengalami cedera berkat telapak kaki bergrip tebal.",
+        "Ditemukan kembali dalam ekspedisi ilmiah internasional di Pegunungan Foja pada tahun 2005 setelah sempat diduga punah."
+      ],
+      "imageUrl": "https://images.unsplash.com/photo-1589656966895-2f33e7653819?auto=format&fit=crop&w=900&q=80",
+      "conservationAction": "Deklarasi Suaka Adat Pegunungan Foja oleh perwakilan masyarakat adat setempat bersama Balai Besar KSDA Papua.",
+      "wikiTitle": "Kanguru-pohon_mantel-emas",
+      "mediaReferences": [
+        {
+          "title": "Ekspedisi Foja dan Penemuan Kembali Satwa Langka Papua",
+          "publisher": "Mongabay Indonesia",
+          "date": "2023",
+          "url": "https://www.mongabay.co.id",
+          "excerpt": "Hutan tak terjamah Pegunungan Foja diakui dunia sebagai laboratorium alami konservasi flora dan fauna Sahul terlengkap."
+        }
+      ],
+      "externalLinks": [
+        { "label": "IUCN Red List Profile", "url": "https://www.iucnredlist.org" }
+      ]
     },
     {
       "id": "penyu-belimbing",
       "name": "Penyu Belimbing",
+      "localName": "Penyu Belimbing",
       "scientificName": "Dermochelys coriacea",
       "englishName": "Leatherback Sea Turtle",
       "iucnStatus": "CR",
       "iucnCategory": "Kritis (Critically Endangered)",
       "island": "Papua",
+      "region": "Papua",
+      "biogeographicZone": "Australis",
       "locationName": "Pantai Jamursba Medi & Wermon, Tambrauw, Papua Barat Daya",
       "coordinates": [-0.35, 132.55],
-      "populationEstimate": "Populasi sarang Pasifik Barat menurun >80%",
+      "populationEstimate": "Penurunan sarang >80% di Pasifik Barat",
       "populationTrend": "Menurun Kritis",
+      "summary": "Penyu laut terbesar di bumi dengan karapas fleksibel berlapis kulit tebal bergaris tujuh lunas memanjang. Pantai utara Papua merupakan situs peneluran terbesar di Pasifik Barat.",
       "threats": [
-        "Tertangkap jaring pukat nelayan lepas pantai (bycatch)",
-        "Tertelan sampah plastik laut yang disangka ubur-ubur",
-        "Pencurian telur penyu dan predasi oleh anjing liar atau babi hutan",
-        "Pemanasan global menaikkan temperatur pasir yang membiaskan rasio kelamin tukik"
+        "Tersangkut jaring pukat hanyut dan rawai nelayan laut lepas (bycatch)",
+        "Tertelan sampah plastik laut yang menyerupai mangsa ubur-ubur",
+        "Predasi telur penyu oleh babi hutan liar dan anjing pantai",
+        "Kenaikan suhu pasir pantai yang memicu kegagalan penetasan tukik"
       ],
       "taxonomy": {
         "kingdom": "Animalia",
@@ -502,8 +1177,8 @@
         "genus": "Dermochelys",
         "species": "Dermochelys coriacea"
       },
-      "biogeography": "Penyu samudra pengembara trans-Pasifik. Pesisir utara Papua Barat merupakan situs peneluran (nesting ground) terbesar dan terpenting bagi populasi Penyu Belimbing di seluruh kawasan Samudra Pasifik Barat.",
-      "distributionDescription": "Bertelur di pantai utara Papua Barat Daya lalu bermigrasi ribuan mil melintasi Samudra Pasifik hingga pantai barat Amerika Serikat.",
+      "biogeography": "Penyu samudra pengembara trans-Pasifik yang mengandalkan pesisir utara Paparan Sahul Papua sebagai pantai bertelur utama sebelum menyeberang Samudra Pasifik.",
+      "distributionDescription": "Bertelur di pesisir Tambrauw Papua Barat Daya lalu mengembara ribuan mil melintasi Pasifik ke arah pesisir barat Amerika Utara.",
       "migrationWaypoints": [
         [-0.35, 132.55],
         [2.50, 135.00],
@@ -512,13 +1187,81 @@
         [25.00, 168.00]
       ],
       "funFacts": [
-        "Penyu laut terbesar di dunia; cangkangnya tidak bertulang keras melainkan berlapis kulit tebal kenyal bergaris 7 lunas memanjang.",
-        "Dapat menyelam hingga kedalaman 1.200 meter di palung samudra yang gelap dan bersuhu mendekati beku.",
-        "Menempuh jarak migrasi lebih dari 10.000 kilometer melintasi Samudra Pasifik dalam sekali rute pengembaraan."
+        "Mampu menyelam hingga kedalaman 1.280 meter di palung samudra yang bertekanan luar biasa dan bersuhu mendekati titik beku.",
+        "Merupakan reptil tercepat di air, mampu berenang dengan kecepatan hingga 35 km/jam."
       ],
       "imageUrl": "https://images.unsplash.com/photo-1518467166778-b88f373ffec7?auto=format&fit=crop&w=900&q=80",
-      "conservationAction": "Kemitraan patroli pantai 24 jam masyarakat adat suku Abun di Jamursba Medi, relokasi sarang ke tempat penetasan aman (hatchery), serta penetapan Suaka Pesisir Jeen Womom.",
-      "wikiTitle": "Penyu_belimbing"
+      "conservationAction": "Patroli pantai 24 jam masyarakat adat suku Abun di Jamursba Medi dan penetapan Kawasan Konservasi Pesisir Jeen Womom.",
+      "wikiTitle": "Penyu_belimbing",
+      "mediaReferences": [
+        {
+          "title": "Masyarakat Adat Abun Kawal Penetasan Penyu Belimbing di Tambrauw",
+          "publisher": "Mongabay Indonesia",
+          "date": "2024",
+          "url": "https://www.mongabay.co.id",
+          "excerpt": "Kearifan lokal suku Abun menjaga pantai peneluran Jamursba Medi menjaga asa kelestarian penyu purba samudra Pasifik."
+        }
+      ],
+      "externalLinks": [
+        { "label": "IUCN Red List Profile", "url": "https://www.iucnredlist.org" }
+      ]
+    },
+    {
+      "id": "mambruk-victoria",
+      "name": "Mambruk Victoria",
+      "localName": "Mambruk Victoria",
+      "scientificName": "Goura victoria",
+      "englishName": "Victoria Crowned Pigeon",
+      "iucnStatus": "VU",
+      "iucnCategory": "Rentan (Vulnerable)",
+      "island": "Papua",
+      "region": "Papua",
+      "biogeographicZone": "Australis",
+      "locationName": "Hutan Dataran Rendah Mamberamo & Teluk Cenderawasih",
+      "coordinates": [-1.85, 137.20],
+      "populationEstimate": "± 10.000 - 20.000 individu",
+      "populationTrend": "Menurun",
+      "summary": "Merpati darat raksasa terbesar di dunia dengan jambul berenda putih anggun di kepalanya dan mantel bulu biru keabu-abuan.",
+      "threats": [
+        "Perburuan untuk konsumsi daging dan mahkota bulu hias",
+        "Penebangan hutan sagu dan hutan rawa dataran rendah",
+        "Aktivitas perambahan di sekitar pesisir Teluk Cenderawasih"
+      ],
+      "taxonomy": {
+        "kingdom": "Animalia",
+        "phylum": "Chordata",
+        "class": "Aves",
+        "order": "Columbiformes",
+        "family": "Columbidae",
+        "genus": "Goura",
+        "species": "Goura victoria"
+      },
+      "biogeography": "Spesialisasi famili Columbidae di zona Paparan Sahul Papua yang berevolusi menjadi pemakan buah darat berbobot besar.",
+      "distributionDescription": "Hutan sagu dan hutan hujan dataran rendah Papua bagian utara serta pulau Biak dan Yapen.",
+      "migrationWaypoints": [
+        [-1.20, 136.10],
+        [-1.85, 137.20],
+        [-2.30, 138.40]
+      ],
+      "funFacts": [
+        "Merpati terbesar di muka bumi, dengan ukuran tubuh sebesar ayam kalkun dewasa dan bobot mencapai 3,5 kilogram.",
+        "Menghasilkan suara deguman panggilan rendah seperti drum bass yang bergema di lantai hutan rawa."
+      ],
+      "imageUrl": "https://images.unsplash.com/photo-1544943910-4c1dc44a053c?auto=format&fit=crop&w=900&q=80",
+      "conservationAction": "Penetapan zona perlindungan hutan sagu pesisir dan penyuluhan anti-perburuan merpati mahkota oleh Balai Besar KSDA Papua.",
+      "wikiTitle": "Mambruk_victoria",
+      "mediaReferences": [
+        {
+          "title": "Perlindungan Habitat Burung Mambruk di Kawasan Suaka Alam Mamberamo",
+          "publisher": "Ditjen KSDAE Kementerian LHK",
+          "date": "2023",
+          "url": "https://ksdae.menlhk.go.id",
+          "excerpt": "Hutan rawa gambut Mamberamo menjadi habitat vital bagi spesies merpati mahkota raksasa endemik Papua."
+        }
+      ],
+      "externalLinks": [
+        { "label": "IUCN Red List Profile", "url": "https://www.iucnredlist.org" }
+      ]
     }
   ]
 }
