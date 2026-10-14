@@ -65,6 +65,7 @@ function MapCameraController({ activeFauna }) {
 
 /**
  * Komponen Utama Peta Geospasial Satwa Endemik Indonesia
+ * Menggunakan Tile Esri ArcGIS Online: 100% Gratis, Bebas Watermark, Legal & Tanpa API Key
  */
 export default function FaunaMap({
   faunaList = [],
@@ -138,11 +139,10 @@ export default function FaunaMap({
         scrollWheelZoom={true}
         className="w-full h-full"
       >
-        {/* CartoDB Voyager Tile: Kontras tinggi, bersih, dan menonjolkan daratan kepulauan */}
+        {/* Esri World Topo Map: 100% GRATIS, LEGAL, BEBAS WATERMARK & TANPA API KEY */}
         <TileLayer
-          attribution='&copy; <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener noreferrer">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions" target="_blank" rel="noopener noreferrer">CARTO</a>'
-          url="https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png"
-          subdomains="abcd"
+          attribution='Tiles &copy; <a href="https://www.esri.com" target="_blank" rel="noopener noreferrer">Esri</a> &mdash; Esri, DeLorme, NAVTEQ, TomTom, USGS, FAO, NPS, NRCAN, GeoBase, Kadaster NL, Ordnance Survey, GIS Community'
+          url="https://server.arcgisonline.com/ArcGIS/rest/services/World_Topo_Map/MapServer/tile/{z}/{y}/{x}"
           maxZoom={19}
         />
 
@@ -157,8 +157,8 @@ export default function FaunaMap({
                 positions={biogeographicLines.wallaceLine.coordinates}
                 pathOptions={{
                   color: biogeographicLines.wallaceLine.color || "#f59e0b",
-                  weight: 3,
-                  opacity: 0.9,
+                  weight: 3.5,
+                  opacity: 0.95,
                   dashArray: "8, 10"
                 }}
               >
@@ -176,8 +176,8 @@ export default function FaunaMap({
                 positions={biogeographicLines.weberLine.coordinates}
                 pathOptions={{
                   color: biogeographicLines.weberLine.color || "#0ea5e9",
-                  weight: 3,
-                  opacity: 0.9,
+                  weight: 3.5,
+                  opacity: 0.95,
                   dashArray: "8, 10"
                 }}
               >
@@ -286,7 +286,7 @@ export default function FaunaMap({
         })}
       </MapContainer>
 
-      {/* Legenda Biogeografi Nusantara (Ketika Layer Aktif) */}
+      {/* Legenda Biogeografi Nusantara */}
       {showBiogeography && (
         <div className="hidden md:flex absolute bottom-4 left-4 z-30 flex-col gap-1.5 p-3 rounded-2xl bg-slate-900/90 backdrop-blur-md border border-slate-800 text-xs text-slate-200 shadow-xl max-w-xs pointer-events-auto">
           <div className="font-bold text-emerald-400 text-[11px] uppercase tracking-wider mb-0.5">

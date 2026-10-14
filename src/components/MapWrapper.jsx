@@ -19,7 +19,7 @@ const DynamicFaunaMap = dynamic(() => import("./FaunaMap"), {
         <Loader2 className="w-4 h-4 animate-spin text-emerald-400" />
         Memuat Peta Geospasial Kepulauan Nusantara...
       </p>
-      <p className="text-xs text-slate-400 mt-1">Menginisialisasi Tile CartoDB Voyager & Layer Biogeografi</p>
+      <p className="text-xs text-slate-400 mt-1">Menginisialisasi Tile Topografi Esri & Layer Biogeografi</p>
     </div>
   ),
 });
