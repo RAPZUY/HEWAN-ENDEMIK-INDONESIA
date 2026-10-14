@@ -1,0 +1,142 @@
+@import "tailwindcss";
+@import "leaflet/dist/leaflet.css";
+
+:root {
+  --color-emerald-deep: #064e3b;
+  --color-forest-slate: #0f172a;
+  --color-earth-amber: #d97706;
+  --color-iucn-cr: #dc2626;
+  --color-iucn-en: #ea580c;
+  --color-iucn-vu: #f59e0b;
+  --color-iucn-lc: #10b981;
+}
+
+/* Custom Leaflet Resets & Overrides */
+.leaflet-container {
+  width: 100%;
+  height: 100%;
+  background-color: #0b1320 !important;
+  font-family: inherit;
+  z-index: 1;
+}
+
+/* Custom Tile Darken Filter for Clean Ecological Dark Map */
+.dark-ecological-tiles {
+  filter: brightness(0.65) invert(1) contrast(3) hue-rotate(200deg) saturate(0.3) brightness(0.7);
+}
+
+/* Custom Marker Pulse & Styling */
+.fauna-custom-marker {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  cursor: pointer;
+  transition: transform 0.25s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.fauna-custom-marker:hover {
+  transform: scale(1.18) translateY(-4px);
+  z-index: 999 !important;
+}
+
+.fauna-custom-marker.active {
+  transform: scale(1.25) translateY(-6px);
+  z-index: 1000 !important;
+}
+
+.fauna-marker-pin {
+  width: 44px;
+  height: 44px;
+  border-radius: 50% 50% 50% 0;
+  transform: rotate(-45deg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.6), 0 0 15px rgba(16, 185, 129, 0.4);
+  border: 2px solid rgba(255, 255, 255, 0.9);
+  position: relative;
+}
+
+.fauna-marker-inner {
+  transform: rotate(45deg);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+}
+
+.fauna-pulse-ring {
+  position: absolute;
+  width: 58px;
+  height: 58px;
+  border-radius: 50%;
+  pointer-events: none;
+  animation: fauna-sonar-pulse 2s cubic-bezier(0.24, 0, 0.38, 1) infinite;
+}
+
+@keyframes fauna-sonar-pulse {
+  0% {
+    transform: scale(0.6);
+    opacity: 0.9;
+  }
+  70% {
+    transform: scale(1.7);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1.8);
+    opacity: 0;
+  }
+}
+
+/* Animated Dashed Polyline for Migration Trails */
+.animated-migration-trail {
+  stroke-dasharray: 10, 14;
+  animation: migration-flow 1.8s linear infinite;
+}
+
+@keyframes migration-flow {
+  from {
+    stroke-dashoffset: 48;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+/* Biogeographic line styling */
+.wallace-line-style {
+  stroke-dasharray: 6, 8;
+  animation: wallace-drift 4s linear infinite;
+}
+
+@keyframes wallace-drift {
+  from {
+    stroke-dashoffset: 28;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+/* Custom Scrollbar for Glassmorphism drawer */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(15, 23, 42, 0.6);
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(16, 185, 129, 0.35);
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(16, 185, 129, 0.65);
+}
